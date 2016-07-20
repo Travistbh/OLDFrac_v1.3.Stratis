@@ -100,6 +100,14 @@ if (hasInterface || isServer) then
 	[] execVM "addons\lsd_nvg\init.sqf";
 	[] execVM "addons\stickyCharges\init.sqf";
 	if (isNil "drn_DynamicWeather_MainThread") then { drn_DynamicWeather_MainThread = [] execVM "addons\scripts\DynamicWeatherEffects.sqf" };
+	[] execVM "addons\scripts\servercredits.sqf"; //Intro Credits
+	[] execVM "addons\HvT\HvT.sqf"; // High Value Target
+	[] execVM "addons\HvT\HvD.sqf"; // High Value Drugs
+	[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";     // Fastrope
+	[] execVM "addons\laptop\init.sqf";
+	[] execVM "addons\Grenades\initGrenades.sqf"; // Toxic Gas Grenades
+	//if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; //GID Structures
+	
 };
 
 // Remove line drawings from map
