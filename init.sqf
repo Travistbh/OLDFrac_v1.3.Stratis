@@ -106,7 +106,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";     // Fastrope
 	[] execVM "addons\laptop\init.sqf";
 	[] execVM "addons\Grenades\initGrenades.sqf"; // Toxic Gas Grenades
-	//if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; //GID Structures
+	if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; //GID Structures
 	
 };
 
