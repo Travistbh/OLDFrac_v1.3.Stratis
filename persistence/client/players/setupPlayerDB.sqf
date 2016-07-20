@@ -23,7 +23,7 @@ fn_requestPlayerData =
 
 fn_deletePlayerData =
 {
-	pvar_deletePlayerData = player;
+	pvar_deletePlayerData = getPlayerUID player;
 	publicVariableServer "pvar_deletePlayerData";
 	playerData_infoPairs = nil;
 	playerData_savePairs = nil;

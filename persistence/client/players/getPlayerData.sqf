@@ -21,10 +21,7 @@ _hitPoints = [];
 _hpDamage = getAllHitPointsDamage _player;
 
 {
-	if (_x != "") then
-	{
-		_hitPoints pushBack [_x, (_hpDamage select 2) select _forEachIndex];
-	};
+	_hitPoints pushBack [_x, (_hpDamage select 2) select _forEachIndex];
 } forEach (_hpDamage select 0);
 
 { _data pushBack _x } forEach

@@ -4,8 +4,8 @@
 //	@file Name: saveVehicle.sqf
 //	@file Author: AgentRev
 
-params ["_veh", "", ["_park",false,[false]]];
-private ["_vehicleID", "_spawningTime", "_lastUse", "_flying", "_updateValues"];
+private ["_veh", "_vehicleID", "_spawningTime", "_lastUse", "_flying", "_updateValues"];
+_veh = _this select 0;
 
 _vehicleID = _veh getVariable "A3W_vehicleID";
 
@@ -29,16 +29,11 @@ if (isNil "_spawningTime") then
 };
 
 _lastUse = _veh getVariable ["vehSaving_lastUse", _spawningTime];
+
 _flying = (!isTouchingGround _veh && (getPos _veh) select 2 > 1);
 
-private _props = [_veh, _flying] call fn_getVehicleProperties;
-_props append
-[
-	["Flying", [0,1] select _flying],
-	["Parked", [0,1] select _park]
-];
-
-_updateValues = [_props, 0] call extDB_pairsToSQL;
+_updateValues = [[_veh, _flying] call fn_getVehicleProperties, 0] call extDB_pairsToSQL;
+_updateValues = _updateValues + (",Flying=" + (if (_flying) then { "1" } else { "0" }));
 
 if ({isPlayer _x} count crew _veh > 0 || isPlayer ((uavControl _veh) select 0)) then
 {
@@ -53,10 +48,5 @@ if (_lastUse > _veh getVariable ["vehSaving_lastUseSave", _spawningTime]) then
 };
 
 [format ["updateServerVehicle:%1:", _vehicleID] + _updateValues] call extDB_Database_async;
-
-if (_park) then
-{
-	_veh setVariable ["A3W_parkedProperties", _props];
-};
 
 _vehicleID

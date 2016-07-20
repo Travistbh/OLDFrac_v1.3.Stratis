@@ -4,16 +4,19 @@
 //	@file Name: fn_kickPlayerIfFlagged.sqf
 //	@file Author: AgentRev
 
-params ["_id", "_uid", "_name", "_jip", "_owner"];
+private ["_UID", "_name", "_owner", "_flag"];
+_UID = _this select 0;
+_name = _this select 1;
+_owner = _this select 2;
 
-private _flag = _uid call fn_getPlayerFlag;
+_flag = _UID call fn_getPlayerFlag;
 
 if (!isNil "_flag" && {count _flag > 1}) then
 {
 	{ call compile preprocessFile "client\functions\quit.sqf" } remoteExecCall ["call", _owner];
 
-	_oldName = _flag select 0;
+	//_oldName = _flag select 0; // always empty for extDB
 	_hackType = _flag select 1;
 
-	diag_log format ["ANTI-HACK: %1 (%2) was kicked due to having been flagged for [%3] in the past", _name, _uid, _hackType];
+	diag_log format ["ANTI-HACK: %1 (%2) was kicked due to having been flagged for [%3] in the past", _name, _UID, _hackType];
 };

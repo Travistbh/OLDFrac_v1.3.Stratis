@@ -166,7 +166,8 @@ if (isServer) then
 		"A3W_vehicleLocking",
 		"A3W_disableBuiltInThermal",
 		"A3W_customDeathMessages",
-		"A3W_headshotNoRevive"
+		"A3W_headshotNoRevive",
+		"A3W_gearsEnabled"
 	];
 
 	addMissionEventHandler ["PlayerConnected", fn_onPlayerConnected];
