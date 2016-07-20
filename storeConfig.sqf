@@ -20,150 +20,146 @@ currentOwnerName = "";
 pistolArray = compileFinal str
 [
 	// Handguns
-	["PM Pistol", "hgun_Pistol_01_F", 25],
-	["P07 Pistol", "hgun_P07_F", 50],
-	["P07 Pistol (Khaki)", "hgun_P07_khk_F", 50],
-	["Rook-40 Pistol", "hgun_Rook40_F", 50],
-	["ACP-C2 Pistol", "hgun_ACPC2_F", 75],
-	["Zubr Revolver", "hgun_Pistol_heavy_02_F", 75],
-	["4-Five Pistol", "hgun_Pistol_heavy_01_F", 100]
+	["PM Pistol", "hgun_Pistol_01_F", 200],
+	["P07 Pistol", "hgun_P07_F", 200],
+	["P07 Pistol (Khaki)", "hgun_P07_khk_F", 200],
+	["Rook-40 Pistol", "hgun_Rook40_F", 200],
+	["ACP-C2 Pistol", "hgun_ACPC2_F", 250],
+	["Zubr Revolver", "hgun_Pistol_heavy_02_F", 250],
+	["4-Five Pistol", "hgun_Pistol_heavy_01_F", 300]
 ];
 
 smgArray = compileFinal str
 [
-	["PDW2000 SMG", "hgun_PDW2000_F", 100],
-	["Protector SMG", "SMG_05_F", 100],
-	["Sting SMG", "SMG_02_F", 125],
-	["Vermin SMG", "SMG_01_F", 125]
+	["PDW2000 SMG", "hgun_PDW2000_F", 425],
+	["Sting SMG", "SMG_02_F", 425],
+	["Protector SMG", "SMG_05_F", 450],
+	["Vermin SMG", "SMG_01_F", 550]
 ];
 
 rifleArray = compileFinal str
 [
 	// Underwater Gun
-	["SDAR Underwater Rifle", "arifle_SDAR_F", 100],
+	["SDAR Underwater Rifle", "arifle_SDAR_F", 400],
 
 	// Assault Rifles
-	["Mk20 Carbine", "arifle_Mk20C_plain_F", 150],
-	["Mk20 Carbine (Camo)", "arifle_Mk20C_F", 150],
-	["Mk20 Rifle", "arifle_Mk20_plain_F", 200],
-	["Mk20 Rifle (Camo)", "arifle_Mk20_F", 200],
-	["Mk20 EGLM Rifle", "arifle_Mk20_GL_plain_F", 250],
-	["Mk20 EGLM Rifle (Camo)", "arifle_Mk20_GL_F", 250],
+	["Mk20 Carbine", "arifle_Mk20C_plain_F", 550],
+	["Mk20 Carbine (Camo)", "arifle_Mk20C_F", 575],
+	["Mk20 Rifle", "arifle_Mk20_plain_F", 700],
+	["Mk20 Rifle (Camo)", "arifle_Mk20_F", 825],
+	["Mk20 EGLM Rifle", "arifle_Mk20_GL_plain_F", 850],
+	["Mk20 EGLM Rifle (Camo)", "arifle_Mk20_GL_F", 875],
 
-	["TRG-20 Carbine", "arifle_TRG20_F", 150],
-	["TRG-21 Rifle ", "arifle_TRG21_F", 200],
-	["TRG-21 EGLM Rifle", "arifle_TRG21_GL_F", 250],
+	["TRG-20 Carbine", "arifle_TRG20_F", 550],
+	["TRG-21 Rifle ", "arifle_TRG21_F", 700],
+	["TRG-21 EGLM Rifle", "arifle_TRG21_GL_F", 850],
 
-	["Katiba Carbine", "arifle_Katiba_C_F", 150],
-	["Katiba Rifle", "arifle_Katiba_F", 200],
-	["Katiba GL Rifle", "arifle_Katiba_GL_F", 250],
+	["Katiba Carbine", "arifle_Katiba_C_F", 600],
+	["Katiba Rifle", "arifle_Katiba_F", 750],
+	["Katiba GL Rifle", "arifle_Katiba_GL_F", 900],
 
-	["MX Carbine", "arifle_MXC_F", 150],
-	["MX Carbine (Black)", "arifle_MXC_Black_F", 150],
-	["MX Carbine (Khaki)", "arifle_MXC_khk_F", 150, "noDLC"],
-	["MX Rifle", "arifle_MX_F", 200],
-	["MX Rifle (Black)", "arifle_MX_Black_F", 200],
-	["MX Rifle (Khaki)", "arifle_MX_khk_F", 200, "noDLC"],
-	["MX 3GL Rifle", "arifle_MX_GL_F", 250],
-	["MX 3GL Rifle (Black)", "arifle_MX_GL_Black_F", 250],
-	["MX 3GL Rifle (Khaki)", "arifle_MX_GL_khk_F", 250, "noDLC"],
+	["MX Carbine", "arifle_MXC_F", 550],
+	["MX Carbine (Black)", "arifle_MXC_Black_F", 575],
+	["MX Rifle", "arifle_MX_F", 700],
+	["MX Rifle (Black)", "arifle_MX_Black_F", 725],
+	["MX 3GL Rifle", "arifle_MX_GL_F", 900],
+	["MX 3GL Rifle (Black)", "arifle_MX_GL_Black_F", 925],
 
-	["SPAR-16 Rifle", "arifle_SPAR_01_blk_F", 200],
-	["SPAR-16 Rifle (Khaki)", "arifle_SPAR_01_khk_F", 200],
-	["SPAR-16 Rifle (Sand)", "arifle_SPAR_01_snd_F", 200],
-	["SPAR-16 GL Rifle", "arifle_SPAR_01_GL_blk_F", 250],
-	["SPAR-16 GL Rifle (Khaki)", "arifle_SPAR_01_GL_khk_F", 250],
-	["SPAR-16 GL Rifle (Sand)", "arifle_SPAR_01_GL_snd_F", 250],
+	["SPAR-16 Rifle", "arifle_SPAR_01_blk_F", 700],
+	["SPAR-16 Rifle (Khaki)", "arifle_SPAR_01_khk_F", 725],
+	["SPAR-16 Rifle (Sand)", "arifle_SPAR_01_snd_F", 725],
+	["SPAR-16 GL Rifle", "arifle_SPAR_01_GL_blk_F", 900],
+	["SPAR-16 GL Rifle (Khaki)", "arifle_SPAR_01_GL_khk_F", 925],
+	["SPAR-16 GL Rifle (Sand)", "arifle_SPAR_01_GL_snd_F", 925],
 
-	["CAR-95 Rifle", "arifle_CTAR_blk_F", 200],
-	["CAR-95 GL Rifle", "arifle_CTAR_GL_blk_F", 250],
-	["Type 115 Rifle", "arifle_ARX_blk_F", 300],
-	["Type 115 Rifle (Hex)", "arifle_ARX_hex_F", 300],
-	["Type 115 Rifle (G Hex)", "arifle_ARX_ghex_F", 300],
+	["CAR-95 Rifle", "arifle_CTAR_blk_F", 700],
+	["CAR-95 GL Rifle", "arifle_CTAR_GL_blk_F", 900],
+	["Type 115 Rifle", "arifle_ARX_blk_F", 700],
+	["Type 115 Rifle (Hex)", "arifle_ARX_hex_F", 725],
+	["Type 115 Rifle (G Hex)", "arifle_ARX_ghex_F", 725],
 
-	["AKS-74U Carbine", "arifle_AKS_F", 150],
-	["AKM Rifle", "arifle_AKM_F", 200],
-	["AK-12 Rifle", "arifle_AK12_F", 250],
-	["AK-12 GL Rifle", "arifle_AK12_GL_F", 300],
-
-	// Marksman Rifles
-	["MXM Rifle", "arifle_MXM_F", 300],
-	["MXM Rifle (Black)", "arifle_MXM_Black_F", 300],
-	["MXM Rifle (Khaki)", "arifle_MXM_khk_F", 300, "noDLC"],
-	["Rahim DMR Rifle", "srifle_DMR_01_F", 375],
-	["Mk18 ABR Rifle", "srifle_EBR_F", 450],
+	["AKS-74U Carbine", "arifle_AKS_F", 600],
+	["AKM Rifle", "arifle_AKM_F", 700],
+	["AK-12 Rifle", "arifle_AK12_F", 750],
+	["AK-12 GL Rifle", "arifle_AK12_GL_F", 900],
+	
+	// Markman Rifles
+	["MXM Rifle", "arifle_MXM_F", 950],
+	["MXM Rifle (Black)", "arifle_MXM_Black_F", 975],
+	["DMR Rifle", "srifle_DMR_01_F", 1100],
+	["Mk18 ABR Rifle", "srifle_EBR_F", 1300],
 
 	// DLC
-	["CMR-76 Rifle", "srifle_DMR_07_blk_F", 400],
-	["CMR-76 Rifle (Hex)", "srifle_DMR_07_hex_F", 400],
-	["CMR-76 Rifle (G Hex)", "srifle_DMR_07_ghex_F", 400],
-	["SPAR-17 Rifle", "arifle_SPAR_03_blk_F", 450],
-	["SPAR-17 Rifle (Khaki)", "arifle_SPAR_03_khk_F", 450],
-	["SPAR-17 Rifle (Sand)", "arifle_SPAR_03_snd_F", 450],
-
-	["Mk14 Rifle (Camo)", "srifle_DMR_06_camo_F", 500],
-	["Mk14 Rifle (Olive)", "srifle_DMR_06_olive_F", 500],
-	["Mk-I EMR Rifle", "srifle_DMR_03_F", 500],
-	["Mk-I EMR Rifle (Camo)", "srifle_DMR_03_multicam_F", 500],
-	["Mk-I EMR Rifle (Khaki)", "srifle_DMR_03_khaki_F", 500],
-	["Mk-I EMR Rifle (Sand)", "srifle_DMR_03_tan_F", 500],
-	["Mk-I EMR Rifle (Woodland)", "srifle_DMR_03_woodland_F", 500],
-	["MAR-10 Rifle", "srifle_DMR_02_F", 750],
-	["MAR-10 Rifle (Camo)", "srifle_DMR_02_camo_F", 750],
-	["MAR-10 Rifle (Sand)", "srifle_DMR_02_sniper_F", 750],
-	["Cyrus Rifle", "srifle_DMR_05_blk_F", 750],
-	["Cyrus Rifle (Hex)", "srifle_DMR_05_hex_F", 750],
-	["Cyrus Rifle (Tan)", "srifle_DMR_05_tan_f", 750],
+	["Mk14 Rifle (Camo) [DLC]", "srifle_DMR_06_camo_F", 1450],
+	["Mk14 Rifle (Olive) [DLC]", "srifle_DMR_06_olive_F", 1475],
+	["Mk-I EMR Rifle [DLC]", "srifle_DMR_03_F", 1475],
+	["Mk-I EMR Rifle (Camo) [DLC]", "srifle_DMR_03_multicam_F", 1500],
+	["Mk-I EMR Rifle (Khaki) [DLC]", "srifle_DMR_03_khaki_F", 1500],
+	["Mk-I EMR Rifle (Sand) [DLC]", "srifle_DMR_03_tan_F", 1500],
+	["Mk-I EMR Rifle (Woodland) [DLC]", "srifle_DMR_03_woodland_F", 1500],
+	["MAR-10 Rifle [DLC]", "srifle_DMR_02_F", 1625],
+	["MAR-10 Rifle (Camo) [DLC]", "srifle_DMR_02_camo_F", 1650],
+	["MAR-10 Rifle (Sand) [DLC]", "srifle_DMR_02_sniper_F", 1650],
+	["Cyrus Rifle [DLC]", "srifle_DMR_05_blk_F", 1700],
+	["Cyrus Rifle (Hex) [DLC]", "srifle_DMR_05_hex_F", 1825],
+	["Cyrus Rifle (Tan) [DLC]", "srifle_DMR_05_tan_f", 1725],
+	
+	["CMR-76 Rifle", "srifle_DMR_07_blk_F", 1800],
+	["CMR-76 Rifle (Hex)", "srifle_DMR_07_hex_F", 1800],
+	["CMR-76 Rifle (G Hex)", "srifle_DMR_07_ghex_F", 1800],
+	["SPAR-17 Rifle", "arifle_SPAR_03_blk_F", 1900],
+	["SPAR-17 Rifle (Khaki)", "arifle_SPAR_03_khk_F", 1900],
+	["SPAR-17 Rifle (Sand)", "arifle_SPAR_03_snd_F", 1900],
 
 	// Sniper Rifles
-	["M320 LRR Sniper", "srifle_LRR_LRPS_F", 1000],
-	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_LRPS_F", 1200],
-	["M320 LRR Sniper (Tropic)", "srifle_LRR_tna_LRPS_F", 1200],
-	["GM6 Lynx Sniper", "srifle_GM6_LRPS_F", 1250],
-	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_LRPS_F", 1500],
-	["GM6 Lynx Sniper (G Hex)", "srifle_GM6_ghex_LRPS_F", 1500],
+	["M320 LRR Sniper", "srifle_LRR_LRPS_F", 1500],
+	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_LRPS_F", 1550],
+	["M320 LRR Sniper (Tropic)", "srifle_LRR_tna_LRPS_F", 1575],
+	["GM6 Lynx Sniper", "srifle_GM6_LRPS_F", 1600],
+	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_LRPS_F", 1650],
+	["GM6 Lynx Sniper (G Hex)", "srifle_GM6_ghex_LRPS_F", 1675],
 
-	["ASP-1 Kir Rifle", "srifle_DMR_04_F", 2000],
-	["ASP-1 Kir Rifle (Tan)", "srifle_DMR_04_tan_F", 2000]
+	["ASP-1 Kir Rifle", "srifle_DMR_04_F", 1500],
+	["ASP-1 Kir Rifle (Tan)", "srifle_DMR_04_tan_F", 1500]
 ];
 
 lmgArray = compileFinal str
 [
-	["MX SW LMG", "arifle_MX_SW_F", 300],
-	["MX SW LMG (Black)", "arifle_MX_SW_Black_F", 325],
-	["MX SW LMG (Khaki)", "arifle_MX_SW_khk_F", 325, "noDLC"],
-	["Mk200 LMG", "LMG_Mk200_F", 400],
-	["Zafir LMG", "LMG_Zafir_F", 500],
+	["MX SW LMG", "arifle_MX_SW_F", 700],
+	["MX SW LMG (Black)", "arifle_MX_SW_Black_F", 725],
+	["MX SW LMG (Khaki)", "arifle_MX_SW_khk_F", 725, "noDLC"],
+	["Mk200 LMG", "LMG_Mk200_F", 825],
+	["Zafir LMG", "LMG_Zafir_F", 1000],
 
-	["SPAR-16S LMG", "arifle_SPAR_02_blk_F", 300],
-	["SPAR-16S LMG (Khaki)", "arifle_SPAR_02_khk_F", 300],
-	["SPAR-16S LMG (Sand)", "arifle_SPAR_02_snd_F", 300],
-	["CAR-95-1 LMG", "arifle_CTARS_blk_F", 300],
-	["LIM-85 LMG", "LMG_03_F", 350],
+	["SPAR-16S LMG", "arifle_SPAR_02_blk_F", 800],
+	["SPAR-16S LMG (Khaki)", "arifle_SPAR_02_khk_F", 850],
+	["SPAR-16S LMG (Sand)", "arifle_SPAR_02_snd_F", 850],
+	["CAR-95-1 LMG", "arifle_CTARS_blk_F", 900],
+	["LIM-85 LMG", "LMG_03_F", 900],
 
-	["SPMG MMG (Sand)", "MMG_02_sand_F", 750],
-	["SPMG MMG (MTP)", "MMG_02_camo_F", 750],
-	["SPMG MMG (Black)", "MMG_02_black_F", 750],
-	["Navid MMG (Tan)", "MMG_01_tan_F", 1000],
-	["Navid MMG (Hex)", "MMG_01_hex_F", 1000]
+	["SPMG MMG (Sand)", "MMG_02_sand_F", 1400],
+	["SPMG MMG (MTP)", "MMG_02_camo_F", 1400],
+	["SPMG MMG (Black)", "MMG_02_black_F", 1400],
+	["Navid MMG (Tan)", "MMG_01_tan_F", 1300],
+	["Navid MMG (Hex)", "MMG_01_hex_F", 1300]
 ];
 
 launcherArray = compileFinal str
 [
-	["RPG-7", "launch_RPG7_F", 350],
-	["RPG-42 Alamut", "launch_RPG32_F", 400],
-	["RPG-42 Alamut (G Hex)", "launch_RPG32_ghex_F", 400, "noDLC"],
-	["PCML", "launch_NLAW_F", 600],
-	["Titan MPRL Compact (Sand)", "launch_Titan_short_F", 500],
-	["Titan MPRL Compact (Coyote)", "launch_O_Titan_short_F", 500],
-	["Titan MPRL Compact (Olive)", "launch_I_Titan_short_F", 500],
-	["Titan MPRL Compact (Tropic)", "launch_B_Titan_short_tna_F", 500, "noDLC"],
-	["Titan MPRL Compact (G Hex)", "launch_O_Titan_short_ghex_F", 500, "noDLC"],
-	["Titan MPRL AA (Sand)", "launch_Titan_F", 600],
-	["Titan MPRL AA (Hex)", "launch_O_Titan_F", 600],
-	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 600],
-	["Titan MPRL AA (Tropic)", "launch_B_Titan_tna_F", 600, "noDLC"],
-	["Titan MPRL AA (G Hex)", "launch_O_Titan_ghex_F", 600, "noDLC"]
+	["RPG-7", "launch_RPG7_F", 900],
+	["RPG-42 Alamut", "launch_RPG32_F", 900],
+	["RPG-42 Alamut (G Hex)", "launch_RPG32_ghex_F", 900, "noDLC"],
+	["PCML", "launch_NLAW_F", 1800],
+	["Titan MPRL Compact (Sand)", "launch_Titan_short_F", 7000],
+	["Titan MPRL Compact (Coyote)", "launch_O_Titan_short_F", 7000],
+	["Titan MPRL Compact (Olive)", "launch_I_Titan_short_F", 7000],
+	["Titan MPRL Compact (Tropic)", "launch_B_Titan_short_tna_F", 7000, "noDLC"],
+	["Titan MPRL Compact (G Hex)", "launch_O_Titan_short_ghex_F", 7000, "noDLC"],
+	["Titan MPRL AA (Sand)", "launch_Titan_F", 7000],
+	["Titan MPRL AA (Hex)", "launch_O_Titan_F", 7000],
+	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 7000],
+	["Titan MPRL AA (Tropic)", "launch_B_Titan_tna_F", 7000, "noDLC"],
+	["Titan MPRL AA (G Hex)", "launch_O_Titan_ghex_F", 7000, "noDLC"]
 ];
 
 allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call rifleArray + call lmgArray + call launcherArray);
@@ -194,53 +190,53 @@ staticGunsArray = compileFinal str
 	// ["Mk32A GMG 20mm Sentry", "I_GMG_01_A_F", 10000],
 	["Mk32 GMG 20mm High tripod", "B_GMG_01_high_F", 6000],
 	["Mk32 GMG 20mm High tripod", "O_GMG_01_high_F", 6000],
-	["Mk32 GMG 20mm High tripod", "I_GMG_01_high_F", 6000],
-	["Mk6 Mortar", "B_Mortar_01_F", 12500],
-	["Mk6 Mortar", "O_Mortar_01_F", 12500],
-	["Mk6 Mortar", "I_Mortar_01_F", 12500]
+	["Mk32 GMG 20mm High tripod", "I_GMG_01_high_F", 6000]
+	// ["Mk6 Mortar", "B_Mortar_01_F", 12500],
+	// ["Mk6 Mortar", "O_Mortar_01_F", 12500],
+	// ["Mk6 Mortar", "I_Mortar_01_F", 12500]
 ];
 
 throwputArray = compileFinal str
 [
-	["RGN Mini Grenade", "MiniGrenade", 50],
-	["RGO Frag Grenade", "HandGrenade", 100],
-	["APERS Tripwire Mine", "APERSTripMine_Wire_Mag", 200],
-	["APERS Bounding Mine", "APERSBoundingMine_Range_Mag", 250],
-	["APERS Mine", "APERSMine_Range_Mag", 300],
-	["Claymore Charge", "ClaymoreDirectionalMine_Remote_Mag", 350],
-	["M6 SLAM Mine", "SLAMDirectionalMine_Wire_Mag", 350],
-	["AT Mine", "ATMine_Range_Mag", 400],
-	["Explosive Charge", "DemoCharge_Remote_Mag", 450],
-	["Explosive Satchel", "SatchelCharge_Remote_Mag", 500],
-	["Smoke Grenade (White)", "SmokeShell", 50],
-	["Smoke Grenade (Purple)", "SmokeShellPurple", 50],
-	["Smoke Grenade (Blue)", "SmokeShellBlue", 50],
-	["Smoke Grenade (Green)", "SmokeShellGreen", 50],
-	["Smoke Grenade (Yellow)", "SmokeShellYellow", 50],
-	["Smoke Grenade (Orange)", "SmokeShellOrange", 50],
-	["Smoke Grenade (Red)", "SmokeShellRed", 50]
+	["Toxic Gas Grenade (Yellow)", "SmokeShellYellow", 750],
+	["RGN Mini Grenade", "MiniGrenade", 350],
+	["RGO Frag Grenade", "HandGrenade", 500],
+	["APERS Tripwire Mine", "APERSTripMine_Wire_Mag", 400],
+	["APERS Bounding Mine", "APERSBoundingMine_Range_Mag", 450],
+	["APERS Mine", "APERSMine_Range_Mag", 600],
+	["Claymore Charge", "ClaymoreDirectionalMine_Remote_Mag", 550],
+	["M6 SLAM Mine", "SLAMDirectionalMine_Wire_Mag", 650],
+	["AT Mine", "ATMine_Range_Mag", 700],
+	["Explosive Charge", "DemoCharge_Remote_Mag", 700],
+	["Explosive Satchel", "SatchelCharge_Remote_Mag", 700],
+	["Smoke Grenade (White)", "SmokeShell", 100],
+	["Smoke Grenade (Purple)", "SmokeShellPurple", 100],
+	["Smoke Grenade (Blue)", "SmokeShellBlue", 100],
+	["Smoke Grenade (Green)", "SmokeShellGreen", 100],
+	["Smoke Grenade (Orange)", "SmokeShellOrange", 100],
+	["Smoke Grenade (Red)", "SmokeShellRed", 100]
 ];
 
 //Gun Store Ammo List
 //Text name, classname, buy cost
 ammoArray = compileFinal str
 [
-	["9mm 16Rnd Mag", "16Rnd_9x21_Mag", 10],
-	["9mm 30Rnd Mag", "30Rnd_9x21_Mag", 15],
-	["9mm 30Rnd SMG Mag", "30Rnd_9x21_Mag_SMG_02", 15],
-	[".45 ACP 6Rnd Cylinder", "6Rnd_45ACP_Cylinder", 5],
-	[".45 ACP 9Rnd Mag", "9Rnd_45ACP_Mag", 10],
-	[".45 ACP 11Rnd Mag", "11Rnd_45ACP_Mag", 15],
-	[".45 ACP 30Rnd Vermin Mag", "30Rnd_45ACP_MAG_SMG_01", 20],
-	[".45 ACP 30Rnd Tracer (Green) Mag", "30Rnd_45ACP_Mag_SMG_01_tracer_green", 15],
-	["5.45mm 30Rnd Mag", "30Rnd_545x39_Mag_F", 20],
-	["5.45mm 30Rnd Tracer (Yellow) Mag", "30Rnd_545x39_Mag_Tracer_F", 15],
-	["5.45mm 30Rnd Tracer (Green) Mag", "30Rnd_545x39_Mag_Tracer_Green_F", 15],
-	["5.56mm 20Rnd Underwater Mag", "20Rnd_556x45_UW_mag", 10],
-	["5.56mm 30Rnd STANAG Mag", "30Rnd_556x45_Stanag", 20],
-	["5.56mm 30Rnd Tracer (Green) Mag", "30Rnd_556x45_Stanag_Tracer_Green", 15],
-	["5.56mm 30Rnd Tracer (Yellow) Mag", "30Rnd_556x45_Stanag_Tracer_Yellow", 15],
-	["5.56mm 30Rnd Tracer (Red) Mag", "30Rnd_556x45_Stanag_Tracer_Red", 15],
+	["9mm 16Rnd Mag", "16Rnd_9x21_Mag", 20],
+	["9mm 30Rnd Mag", "30Rnd_9x21_Mag", 30],
+	["9mm 30Rnd SMG Mag", "30Rnd_9x21_Mag_SMG_02", 30],
+	[".45 ACP 6Rnd Cylinder", "6Rnd_45ACP_Cylinder", 10],
+	[".45 ACP 9Rnd Mag", "9Rnd_45ACP_Mag", 20],
+	[".45 ACP 11Rnd Mag", "11Rnd_45ACP_Mag", 30],
+	[".45 ACP 30Rnd Vermin Mag", "30Rnd_45ACP_MAG_SMG_01", 40],
+	[".45 ACP 30Rnd Tracer (Green) Mag", "30Rnd_45ACP_Mag_SMG_01_tracer_green", 30],
+	["5.45mm 30Rnd Mag", "30Rnd_545x39_Mag_F", 30],
+	["5.45mm 30Rnd Tracer (Yellow) Mag", "30Rnd_545x39_Mag_Tracer_F", 30],
+	["5.45mm 30Rnd Tracer (Green) Mag", "30Rnd_545x39_Mag_Tracer_Green_F", 30],
+	["5.56mm 20Rnd Underwater Mag", "20Rnd_556x45_UW_mag", 20],
+	["5.56mm 30Rnd STANAG Mag", "30Rnd_556x45_Stanag", 40],
+	["5.56mm 30Rnd Tracer (Green) Mag", "30Rnd_556x45_Stanag_Tracer_Green", 30],
+	["5.56mm 30Rnd Tracer (Yellow) Mag", "30Rnd_556x45_Stanag_Tracer_Yellow", 30],
+	["5.56mm 30Rnd Tracer (Red) Mag", "30Rnd_556x45_Stanag_Tracer_Red", 30],
 	["5.56mm 150Rnd Mag", "150Rnd_556x45_Drum_Mag_F", 100],
 	["5.56mm 150Rnd Tracer (Red) Mag", "150Rnd_556x45_Drum_Mag_Tracer_F", 75],
 	["5.56mm 200Rnd Box", "200Rnd_556x45_Box_F", 125],
