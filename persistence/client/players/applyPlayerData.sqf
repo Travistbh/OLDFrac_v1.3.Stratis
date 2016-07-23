@@ -6,26 +6,38 @@
 
 // This is where you load player status & inventory data which will be wiped upon death, for persistent variables use c_applyPlayerInfo.sqf instead
 
-private ["_data", "_name", "_value"];
+private ["_data", "_removal", "_name", "_value"];
 
 _data = _this;
+_removal = param [1, true];
 
-removeAllWeapons player;
-removeAllAssignedItems player;
-removeUniform player;
-removeVest player;
-removeBackpack player;
-removeGoggles player;
-removeHeadgear player;
+if (_removal isEqualTo false) then
+{
+	_data = param [0, [], [[]]];
+}
+else
+{
+	removeAllWeapons player;
+	removeAllAssignedItems player;
+	removeUniform player;
+	removeVest player;
+	removeBackpack player;
+	removeGoggles player;
+	removeHeadgear player;
+};
 
 {
-	_name = _x select 0;
-	_value = _x select 1;
+	_x params ["_name", "_value"];
 
 	switch (_name) do
 	{
 		case "Damage": { player setDamage _value };
-		case "HitPoints": { { player setHitPointDamage _x } forEach _value };
+		case "HitPoints":
+		{
+			player allowDamage true;
+			{ player setHitPointDamage _x } forEach _value;
+			player allowDamage !(player getVariable ["playerSpawning", true]);
+		};
 		case "Hunger": { hungerLevel = _value };
 		case "Thirst": { thirstLevel = _value };
 		case "Money": { player setVariable ["cmoney", _value, true] };
@@ -41,7 +53,28 @@ removeHeadgear player;
 		case "Uniform":
 		{
 			// If uniform cannot be worn by player due to different team, try to convert it, else give default instead
-			player forceadduniform _value;
+			if (_value != "") then
+			{
+				if (player isUniformAllowed _value || // indie exception for NATO jungle ghillie & thermal suit due to BIS not giving a damn
+				    (playerSide == INDEPENDENT && {{_value == _x} count ["U_B_CTRG_Soldier_F","U_B_T_FullGhillie_tna_F"] > 0})) then
+				{
+					player forceAddUniform _value;
+				}
+				else
+				{
+					_newUniform = [player, _value] call uniformConverter;
+
+					if (player isUniformAllowed _newUniform ||
+					    (playerSide == INDEPENDENT && {{_newUniform == _x} count ["U_B_CTRG_Soldier_F","U_B_T_FullGhillie_tna_F"] > 0})) then
+					{
+						player forceAddUniform _newUniform;
+					}
+					else
+					{
+						player forceAddUniform ([player, "uniform"] call getDefaultClothing);
+					}
+				};
+			};
 		};
 		case "Vest": { if (_value != "") then { player addVest _value } };
 		case "Backpack":
@@ -100,8 +133,7 @@ removeHeadgear player;
 			{
 				if ([player, _x] call isAssignableBinocular) then
 				{
-					// Temporary fix for http://feedback.arma3.com/view.php?id=21618
-					if (_x == "Laserdesignator" && {{_x == "Laserbatteries"} count magazines player == 0}) then
+					if (_x select [0,15] == "Laserdesignator" && {{_x == "Laserbatteries"} count magazines player == 0}) then
 					{
 						[player, "Laserbatteries"] call fn_forceAddItem;
 					};
@@ -125,7 +157,7 @@ removeHeadgear player;
 			} forEach _value;
 		};
 		case "CurrentWeapon": { player selectWeapon _value };
-		case "Stance": { [player, [player, _value] call getFullMove] call switchMoveGlobal };
+		case "Stance": { [player, [player, _value] call getFullMove] call switchMoveGlobal; uiSleep 1 }; // 1 sec sleep to ensure full stance transition before moving player to fimal location
 		case "UniformWeapons": { { (uniformContainer player) addWeaponCargoGlobal _x } forEach _value };
 		case "UniformItems": { { (uniformContainer player) addItemCargoGlobal _x } forEach _value };
 		case "UniformMagazines": { [uniformContainer player, _value] call processMagazineCargo };
