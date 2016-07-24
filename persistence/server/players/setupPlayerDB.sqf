@@ -67,10 +67,6 @@ A3W_fnc_checkPlayerFlag =
 			(owner _player) publicVariableClient _pvarName;
 
 			{
-				if (_x select 0 == "gearLevel") then
-				{
-					_player setVariable ["gear", _x select 1, true];
-				};
 				_x params ["_var", "_val"];
 				switch (_var) do
 				{

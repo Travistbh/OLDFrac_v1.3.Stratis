@@ -7,43 +7,24 @@
 if (!isServer) exitWith {};
 
 params ["_UID", "_player"];
-private ["_result", "_data", "_location", "_dataTemp", "_ghostingTimer", "_secs", "_columns", "_pvar", "_pvarG", "_gears", "_gearsEnabled"];
+private ["_result", "_data", "_location", "_dataTemp", "_ghostingTimer", "_secs", "_columns", "_pvar", "_pvarG"];
 
 private _moneySaving = ["A3W_moneySaving"] call isConfigOn;
 private _crossMap = ["A3W_extDB_playerSaveCrossMap"] call isConfigOn;
 private _environment = ["A3W_extDB_Environment", "normal"] call getPublicVar;
 private _mapID = call A3W_extDB_MapID;
-_gearsEnabled = ["A3W_gearsEnabled"] call isConfigOn;
 
 private _query = [["checkPlayerSave", _UID, _mapID], ["checkPlayerSaveXMap", _UID, _environment]] select _crossMap;
 _result = ([_query, 2] call extDB_Database_async) param [0,false];
 
-if (_gearsEnabled) then
-{
-	_result = ["getPlayerGearLevel:" + _UID, 2] call extDB_Database_async;
-
-	if (count _result > 0) then
-	{
-		_gears = _result select 0;
-	};
-}
-
 if (!_result) then
 {
-	_data = [
-				["PlayerSaveValid", false], 
-				["GearLevel", _gears]
-				/*, ["BankMoney", _bank]*/
-			];
+	_data = [["PlayerSaveValid", false]/*, ["BankMoney", _bank]*/];
 
 	// prevent constraint fail on first save
 	private _sqlValues = [[["Name", name _player]], [0,1], false] call extDB_pairsToSQL;
 	[["insertOrUpdatePlayerInfo", _UID, _sqlValues select 0, _sqlValues select 1]] call extDB_Database_async;
 }
-
-
-
-
 else
 {
 	// The order of these values is EXTREMELY IMPORTANT!
@@ -144,8 +125,6 @@ else
 
 	_data append _dataTemp;
 	//_data pushBack ["BankMoney", _bank];
-	_data pushBack ["GearLevel", _gears];
-	_data pushBack ["PlayerSaveValid", true];
 };
 
 private _bank = 0;
