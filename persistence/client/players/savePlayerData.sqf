@@ -6,32 +6,27 @@
 
 #define PLAYER_CONDITION (alive player && !(missionNamespace getVariable ["playerSpawning", true]) && (isNil "A3W_fnc_isUnconscious" || {!(player call A3W_fnc_isUnconscious)}))
 
-if (!isNil "savePlayerHandle" && {savePlayerHandle isEqualType 0 && {!completedFSM savePlayerHandle}}) exitWith {};
+if (!isNil "savePlayerHandle" && {typeName savePlayerHandle == "SCRIPT"} && {!scriptDone savePlayerHandle}) exitWith {};
 
-savePlayerHandle = [_this,
+savePlayerHandle = _this spawn
 {
 	if (PLAYER_CONDITION && {!isNil "isConfigOn" && {["A3W_playerSaving"] call isConfigOn}}) then
 	{
 		_UID = getPlayerUID player;
-		_manualSave = param [0, false, [false]];
+		_manualSave = [_this, 0, false, [false]] call BIS_fnc_param;
 
 		// In case script is triggered via menu action
 		if (!_manualSave) then
 		{
-			_manualSave = param [3, false, [false]];
+			_manualSave = [_this, 3, false, [false]] call BIS_fnc_param;
 		};
 
 		_info =
 		[
-			["Name", profileName],
+			["Name", name player],
 			["LastSide", str playerSide]//,
 			//["BankMoney", player getVariable ["bmoney", 0]] // NOTE: Bank money saving has been moved server-side
 		];
-
-		if (["A3W_privateStorage"] call isConfigOn) then
-		{
-			_info pushBack ["PrivateStorage", player getVariable ["private_storage", []]]; // not expected by server unless A3W_privateStorage = 1, otherwise will cause errors
-		};
 
 		_data = [player] call fn_getPlayerData;
 
@@ -102,11 +97,11 @@ savePlayerHandle = [_this,
 			} forEach _data;
 		};
 	};
-}] execFSM "call.fsm";
+};
 
-if (savePlayerHandle isEqualType 0) then
+if (typeName savePlayerHandle == "SCRIPT") then
 {
 	_savePlayerHandle = savePlayerHandle;
-	waitUntil {completedFSM _savePlayerHandle};
+	waitUntil {scriptDone _savePlayerHandle};
 	savePlayerHandle = nil;
 };

@@ -6,7 +6,20 @@
 
 #include "functions.sqf"
 
-private ["_maxLifetime", "_isWarchestEntry", "_isBeaconEntry", "_worldDir", "_methodDir", "_objCount", "_objects", "_exclObjectIDs"];
+private ["_strToSide", "_maxLifetime", "_isWarchestEntry", "_isBeaconEntry", "_worldDir", "_methodDir", "_objCount", "_objects", "_exclObjectIDs"];
+
+_strToSide =
+{
+	switch (toUpper _this) do
+	{
+		case "WEST":  { BLUFOR };
+		case "EAST":  { OPFOR };
+		case "GUER":  { INDEPENDENT };
+		case "CIV":   { CIVILIAN };
+		case "LOGIC": { sideLogic };
+		default       { sideUnknown };
+	};
+};
 
 _maxLifetime = ["A3W_objectLifetime", 0] call getPublicVar;
 
@@ -60,7 +73,7 @@ _exclObjectIDs = [];
 			_obj setVectorDirAndUp _dir;
 		};
 
-		[_obj, false] call vehicleSetup;
+		[_obj] call vehicleSetup;
 		[_obj] call basePartSetup;
 
 		if (!isNil "_objectID") then
@@ -78,11 +91,7 @@ _exclObjectIDs = [];
 		{
 			_obj allowDamage true;
 			_obj setDamage _damage;
-			_obj setVariable ["allowDamage", true, true];
-		}
-		else
-		{
-			_obj setVariable ["allowDamage", false, true];
+			_obj setVariable ["allowDamage", true];
 		};
 
 		if (!isNil "_owner") then
@@ -188,12 +197,6 @@ _exclObjectIDs = [];
 
 	if (!_valid && !isNil "_objectID") then
 	{
-		if (!isNil "_obj") then
-		{
-			_obj setVariable ["A3W_objectID", nil, true];
-		};
-
-		_exclVehicleIDs pushBack _vehicleID;
 		_exclObjectIDs pushBack _objectID;
 	};
 } forEach _objects;

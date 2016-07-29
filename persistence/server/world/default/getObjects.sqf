@@ -21,6 +21,7 @@ _vars =
 	[["Position", "ARRAY"], "_pos"],
 	[["Direction", "ARRAY"], "_dir"],
 	[["HoursAlive", "NUMBER"], "_hoursAlive"],
+	[["HoursUnused", "NUMBER"], "_hoursUnused"],
 	[["Damage", "NUMBER"], "_damage"],
 	[["AllowDamage", "NUMBER"], "_allowDamage"],
 	[["OwnerUID", "STRING"], "_owner"],

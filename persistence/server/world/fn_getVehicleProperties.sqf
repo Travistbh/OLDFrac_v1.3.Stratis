@@ -23,10 +23,7 @@ _hitPoints = [];
 _hpDamage = getAllHitPointsDamage _veh;
 
 {
-	if (_x != "") then
-	{
-		_hitPoints pushBack [_x, (_hpDamage select 2) select _forEachIndex];
-	};
+	_hitPoints pushBack [_x, (_hpDamage select 2) select _forEachIndex];
 } forEach (_hpDamage select 0);
 
 _variables = [];
@@ -43,35 +40,11 @@ switch (true) do
 	};
 };
 
-private _resupplyTruck = _veh getVariable ["A3W_resupplyTruck", false];
-
-if (_resupplyTruck) then
-{
-	_variables pushBack ["A3W_resupplyTruck", true];
-};
-
-private _isUav = (round getNumber (configFile >> "CfgVehicles" >> _class >> "isUav") > 0);
-
-if (_isUav && side _veh in [BLUFOR,OPFOR,INDEPENDENT]) then
-{
-	_variables pushBack ["uavSide", str side _veh];
-};
-
 _owner = _veh getVariable ["ownerUID", ""];
-private _ownerName = _veh getVariable ["ownerName", ""];
-
-if (_ownerName != "") then
-{
-	_variables pushBack ["ownerName", toArray _ownerName];
-};
-
-private _locked = 1 max locked _veh; // default vanilla state is always 1, so we ignore 0's
 
 _doubleBSlash = (call A3W_savingMethod == "extDB");
 
 _textures = [];
-
-private _addTexture =
 {
 	_tex = _x select 1;
 
@@ -81,17 +54,7 @@ private _addTexture =
 	};
 
 	[_textures, _tex, [_x select 0]] call fn_addToPairs;
-};
-
-// vehicle has at least 2 random textures, save everything
-if (count getArray (configFile >> "CfgVehicles" >> _class >> "textureList") >= 4) then
-{
-	{ _x = [_forEachIndex, _x]; call _addTexture } forEach getObjectTextures _veh;
-}
-else // only save custom ones
-{
-	_addTexture forEach (_veh getVariable ["A3W_objectTextures", []]);
-};
+} forEach (_veh getVariable ["A3W_objectTextures", []]);
 
 _weapons = [];
 _magazines = [];
@@ -180,7 +143,6 @@ _props =
 	["Damage", _damage],
 	["HitPoints", _hitPoints],
 	["OwnerUID", _owner],
-	["LockState", _locked],
 	["Variables", _variables],
 	["Textures", _textures],
 
@@ -199,7 +161,7 @@ _props =
 ];
 
 // If flying and not UAV, do not save current pos/dir/vel
-if (_flying && !_isUav) then
+if (_flying && {getNumber (configFile >> "CfgVehicles" >> _class >> "isUav") <= 0}) then
 {
 	_props deleteRange [1,3];
 };

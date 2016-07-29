@@ -227,6 +227,7 @@ ammoArray = compileFinal str
 	[".45 ACP 6Rnd Cylinder", "6Rnd_45ACP_Cylinder", 10],
 	[".45 ACP 9Rnd Mag", "9Rnd_45ACP_Mag", 20],
 	[".45 ACP 11Rnd Mag", "11Rnd_45ACP_Mag", 30],
+	["9mm 10 rnd", "10Rnd_9x21_Mag", 11],
 	[".45 ACP 30Rnd Vermin Mag", "30Rnd_45ACP_MAG_SMG_01", 40],
 	[".45 ACP 30Rnd Tracer (Green) Mag", "30Rnd_45ACP_Mag_SMG_01_tracer_green", 30],
 	["5.45mm 30Rnd Mag", "30Rnd_545x39_Mag_F", 30],

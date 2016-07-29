@@ -20,6 +20,110 @@ _handled = false;
 // keycodes are defined in client\clientEvents\customKeys.sqf
 switch (true) do
 {
+	//MADE BY ISAAC HARDING DO NOT USE OR STEAL WITHOUT MY PERMSION
+	case (_key == 2):
+	{
+		player SelectWeapon "arifle_ARX_blk_F";
+		player SelectWeapon "arifle_ARX_hex_F";
+		player SelectWeapon "arifle_ARX_ghex_F";
+		player SelectWeapon "arifle_SPAR_02_blk_F";
+		player SelectWeapon "arifle_SPAR_02_khk_F";
+		player SelectWeapon "arifle_SPAR_02_snd_F";
+		player SelectWeapon "arifle_CTARS_blk_F";
+		player SelectWeapon "LMG_03_F";
+		player SelectWeapon "arifle_SPAR_03_blk_F";
+		player SelectWeapon "srifle_DMR_07_ghex_F";
+		player SelectWeapon "srifle_DMR_07_hex_F";
+		player SelectWeapon "srifle_DMR_07_blk_F";
+		player SelectWeapon "arifle_AK12_GL_F";
+		player SelectWeapon "arifle_AK12_F";
+		player SelectWeapon "arifle_AKM_F";
+		player SelectWeapon "arifle_AKS_F";
+		player SelectWeapon "arifle_CTAR_GL_blk_F";
+		player SelectWeapon "arifle_CTAR_blk_F";
+		player SelectWeapon "arifle_SPAR_01_GL_snd_F";
+		player SelectWeapon "arifle_SPAR_01_GL_khk_F";
+		player SelectWeapon "arifle_SPAR_01_GL_blk_F";
+		player SelectWeapon "arifle_SPAR_01_snd_F";
+		player SelectWeapon "arifle_SPAR_01_khk_F";
+		player SelectWeapon "arifle_SPAR_01_blk_F";
+		player SelectWeapon "hgun_PDW2000_F";
+		player SelectWeapon "SMG_02_F";
+		player SelectWeapon "SMG_01_F";
+		player SelectWeapon "arifle_SDAR_F";
+		player SelectWeapon "arifle_Mk20C_plain_F";
+		player SelectWeapon "arifle_Mk20C_F";
+		player SelectWeapon "arifle_Mk20_plain_F";
+		player SelectWeapon "arifle_Mk20_F";
+		player SelectWeapon "arifle_Mk20_GL_plain_F";
+		player SelectWeapon "arifle_Mk20_GL_F";
+		player SelectWeapon "arifle_TRG20_F";
+		player SelectWeapon "arifle_TRG21_F";
+		player SelectWeapon "arifle_TRG21_GL_F";
+		player SelectWeapon "arifle_Katiba_C_F";
+		player SelectWeapon "arifle_Katiba_GL_F";
+		player SelectWeapon "arifle_MXC_F";
+		player SelectWeapon "arifle_MXC_Black_F";
+		player SelectWeapon "arifle_MX_F";
+		player SelectWeapon "arifle_MX_Black_F";
+		player SelectWeapon "arifle_MX_GL_F";
+		player SelectWeapon "arifle_MX_GL_Black_F";
+		player SelectWeapon "arifle_MXM_F";
+		player SelectWeapon "arifle_MXM_Black_F";
+		player SelectWeapon "srifle_DMR_01_F";
+		player SelectWeapon "srifle_EBR_F";
+		player SelectWeapon "srifle_DMR_06_camo_F";
+		player SelectWeapon "srifle_DMR_06_olive_F";
+		player SelectWeapon "srifle_DMR_03_F";
+		player SelectWeapon "srifle_DMR_03_multicam_F";
+		player SelectWeapon "srifle_DMR_03_khaki_F";
+		player SelectWeapon "srifle_DMR_03_tan_F";
+		player SelectWeapon "srifle_DMR_03_woodland_F";
+		player SelectWeapon "srifle_DMR_02_F";
+		player SelectWeapon "srifle_DMR_02_camo_F";
+		player SelectWeapon "srifle_DMR_02_sniper_F";
+		player SelectWeapon "srifle_DMR_05_blk_F";
+		player SelectWeapon "srifle_DMR_05_hex_F";
+		player SelectWeapon "srifle_DMR_05_tan_f";
+		player SelectWeapon "srifle_LRR_LRPS_F";
+		player SelectWeapon "srifle_LRR_camo_LRPS_F";
+		player SelectWeapon "srifle_GM6_LRPS_F";
+		player SelectWeapon "srifle_GM6_camo_LRPS_F";
+		player SelectWeapon "srifle_DMR_04_F";
+		player SelectWeapon "srifle_DMR_04_tan_F";
+		player SelectWeapon "arifle_MX_SW_F";
+		player SelectWeapon "arifle_MX_SW_Black_F";
+		player SelectWeapon "LMG_Mk200_F";
+		player SelectWeapon "LMG_Zafir_F";
+		player SelectWeapon "MMG_01_tan_F";
+		player SelectWeapon "MMG_01_hex_F";
+		player SelectWeapon "MMG_02_sand_F";
+		player SelectWeapon "MMG_02_camo_F";
+		player SelectWeapon "MMG_02_black_F";
+	};
+	case (_key == 3):
+	{
+		player SelectWeapon "hgun_P07_F";
+		player SelectWeapon "hgun_Rook40_F";
+		player SelectWeapon "hgun_ACPC2_F";
+		player SelectWeapon "hgun_Pistol_heavy_02_F";
+		player SelectWeapon "hgun_Pistol_heavy_01_F";
+		player SelectWeapon "hgun_Pistol_01_F";
+		player SelectWeapon "hgun_P07_khk_F";
+	};
+	case (_key == 4):
+	{
+		player SelectWeapon "launch_RPG32_F";
+		player SelectWeapon "launch_NLAW_F";
+		player SelectWeapon "launch_Titan_short_F";
+		player SelectWeapon "launch_O_Titan_short_F";
+		player SelectWeapon "launch_I_Titan_short_F";
+		player SelectWeapon "launch_Titan_F";
+		player SelectWeapon "launch_O_Titan_F";
+		player SelectWeapon "launch_I_Titan_F";
+		player SelectWeapon "launch_RPG7_F";
+	};
+	//MADE BY ISAAC HARDING DO NOT USE OR STEAL WITHOUT MY PERMSION
 	// U key
 	case (_key in A3W_customKeys_adminMenu):
 	{
