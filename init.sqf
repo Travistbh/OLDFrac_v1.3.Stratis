@@ -117,3 +117,7 @@ if (hasInterface || isServer) then
 	"thisTrigger setTriggerTimeout [30,30,30,false]",
 	"{if (markerShape _x == 'POLYLINE') then {deleteMarker _x}} forEach allMapMarkers"
 ];
+
+0 = [] spawn {
+{while {alive _x} do {scopename "fatigued"; sleep 0.1; waituntil {sleep 0.1; getFatigue _x > 0.1 }; _x setFatigue 0.1}; breakTo "fatigued"} forEach playableUnits+switchableUnits;
+};
