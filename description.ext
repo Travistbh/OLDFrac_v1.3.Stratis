@@ -65,7 +65,6 @@ briefing = 0; // if 0, skip Continue button
 #include "client\systems\playerMenu\dialog\respawn_dialog.hpp"
 #include "client\systems\playerMenu\dialog\teamkill_dialog.hpp"
 #include "addons\proving_ground\PG_config.hpp"
-//#include "addons\TOParmaInfo\dialog\TOParmaInfo_dialog.hpp"
 #include "addons\beacondetector\sound\cfgsounds.hpp"
 #include "addons\outlw_magrepack\config.hpp"
 #include "addons\gui\gui.hpp"
@@ -73,6 +72,7 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\CHVD\dialog.hpp"
 #include "addons\taw_vd\dialog.hpp"
 #include "addons\laptop\downloadData.hpp"
+#include "addons\TOParmaInfo\dialog\TOParmaInfo_dialog.hpp"
 
 class RscTitles
 {
