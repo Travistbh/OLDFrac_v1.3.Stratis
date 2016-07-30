@@ -382,10 +382,10 @@ accessoriesArray = compileFinal str
 	["LRPS", "optic_LRPS", 300, "item"],
 	["LRPS (G Hex)", "optic_LRPS_ghex_F", 300, "item"],
 	["LRPS (Tropic)", "optic_LRPS_tna_F", 300, "item"],
-	["NVS", "optic_NVS", 500, "item"],
-	["TWS", "optic_tws", 5000, "item", "HIDDEN"], // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
-	["TWS MG", "optic_tws_mg", 6000, "item", "HIDDEN"],
-	["Nightstalker", "optic_Nightstalker", 7500, "item", "HIDDEN"]
+	["NVS", "optic_NVS", 500, "item"]
+	//["TWS", "optic_tws", 5000, "item", "HIDDEN"] // To hide from store list, add "HIDDEN" after "item", like "item", "HIDDEN"]
+	//["TWS MG", "optic_tws_mg", 6000, "item", "HIDDEN"]
+	//["Nightstalker", "optic_Nightstalker", 7500, "item", "HIDDEN"]
 ];
 
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
@@ -701,9 +701,9 @@ genItemArray = compileFinal str
 	["UAV Terminal (NATO)", "B_UavTerminal", 150, "gps"],
 	["UAV Terminal (CSAT)", "O_UavTerminal", 150, "gps"],
 	["UAV Terminal (AAF)", "I_UavTerminal", 150, "gps"],
-	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 1000, "backpack"],
-	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 1000, "backpack"],
-	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 1000, "backpack"],
+	//["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 1000, "backpack"],
+	//["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 1000, "backpack"],
+	//["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 1000, "backpack"],
 	["Remote Designator (Sand)", "B_Static_Designator_01_weapon_F", 750, "backpack"],
 	["Remote Designator (Hex)", "O_Static_Designator_02_weapon_F", 750, "backpack"],
 	["GPS", "ItemGPS", 100, "gps"],
@@ -857,7 +857,7 @@ landArray = compileFinal str
 	["Fuel Truck (Camo)", "B_G_Van_01_fuel_F", 2100, "vehicle", "SKIPSAVE"],
 
 	["HEMTT Tractor", "B_Truck_01_mover_F", 4000, "vehicle"],
-	["HEMTT Resupply", "B_Truck_01_ammo_F", 5000, "vehicle"],
+	//["HEMTT Resupply", "B_Truck_01_ammo_F", 5000, "vehicle"],
 	//["HEMTT Box", "B_Truck_01_box_F", 5000, "vehicle"],
 	["HEMTT Transport", "B_Truck_01_transport_F", 6000, "vehicle"],
 	["HEMTT Covered", "B_Truck_01_covered_F", 7000, "vehicle"],
@@ -866,14 +866,14 @@ landArray = compileFinal str
 	["HEMTT Repair", "B_Truck_01_Repair_F", 10000, "vehicle"],
 
 	["Tempest Device", "O_Truck_03_device_F", 4000, "vehicle"],
-	["Tempest Resupply", "O_Truck_03_ammo_F", 5000, "vehicle"],
+	//["Tempest Resupply", "O_Truck_03_ammo_F", 5000, "vehicle"],
 	["Tempest Transport", "O_Truck_03_transport_F", 6000, "vehicle"],
 	["Tempest Covered", "O_Truck_03_covered_F", 7000, "vehicle"],
 	["Tempest Fuel", "O_Truck_03_fuel_F", 8000, "vehicle"],
 	["Tempest Medical", "O_Truck_03_medical_F", 9000, "vehicle"],
 	["Tempest Repair", "O_Truck_03_repair_F", 10000, "vehicle"],
 
-	["Zamak Resupply", "I_Truck_02_ammo_F", 4000, "vehicle"],
+	//["Zamak Resupply", "I_Truck_02_ammo_F", 4000, "vehicle"],
 	["Zamak Transport", "I_Truck_02_transport_F", 4500, "vehicle"],
 	["Zamak Covered", "I_Truck_02_covered_F", 5000, "vehicle"],
 	["Zamak Fuel", "I_Truck_02_fuel_F", 6000, "vehicle"],
@@ -933,7 +933,7 @@ helicoptersArray = compileFinal str
 	["WY-55 Hellcat (Green)", "I_Heli_light_03_unarmed_F", 7000, "vehicle"], // AW159
 	["CH-49 Mohawk", "I_Heli_Transport_02_F", 10000, "vehicle"], // AW101
 
-	["Mi-290 Taru (Resupply)", "O_Heli_Transport_04_ammo_F", 7500, "vehicle"],
+	//["Mi-290 Taru (Resupply)", "O_Heli_Transport_04_ammo_F", 7500, "vehicle"],
 	["Mi-290 Taru (Crane)", "O_Heli_Transport_04_F", 7500, "vehicle"], // CH-54
 	["Mi-290 Taru (Box)", "O_Heli_Transport_04_box_F", 8000, "vehicle"],
 	["Mi-290 Taru (Fuel)", "O_Heli_Transport_04_fuel_F", 8500, "vehicle"],
