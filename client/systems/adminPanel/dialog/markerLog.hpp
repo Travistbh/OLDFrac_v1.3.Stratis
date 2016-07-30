@@ -31,7 +31,7 @@ class MarkerLog
 		{
 			idc = -1;
 			colorText[] = {1, 1, 1, 1};
-			colorBackground[] = {A3W_UICOLOR_R, A3W_UICOLOR_G, A3W_UICOLOR_B, 0.8};
+			colorBackground[] = {A3W_UICOLOR_R, A3W_UICOLOR_G, A3W_UICOLOR_B, 1};
 
 			x = 0.1875 * (4/3) * SZ_SCALE_ABS + safezoneX;
 			y = 0.15 * SZ_SCALE_ABS + safezoneY;

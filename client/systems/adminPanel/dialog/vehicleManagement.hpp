@@ -119,7 +119,7 @@ class VehicleManagement {
 		class vehicleListBox: w_RscList
 		{
 			idc = vehicleManagementListBox;
-			onLBSelChanged="[1,_this select 1] execVM ""client\systems\adminPanel\importvalues.sqf"";";
+			onLBSelChanged = "[1,_this select 1] 'execVM client\systems\adminPanel\importvalues.sqf'";
 			x = 0.305 * safezoneW + safezoneX;
 			y = 0.324 * safezoneH + safezoneY;
 			w = 0.32875 * safezoneW;

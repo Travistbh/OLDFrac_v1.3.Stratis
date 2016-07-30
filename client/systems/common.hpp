@@ -341,9 +341,9 @@ class w_RscButton
 	text = "";
 	colorText[] = {1,1,1,.9};
 	colorDisabled[] = {0,0,0,1};
-	colorBackground[] = {A3W_UICOLOR_R * 0.8, A3W_UICOLOR_G * 0.8, A3W_UICOLOR_B * 0.8, 1}; // normal
-	colorFocused[] = {A3W_UICOLOR_R * 0.55, A3W_UICOLOR_G * 0.55, A3W_UICOLOR_B * 0.55, 1}; // pulse
-	colorBackgroundActive[] = {A3W_UICOLOR_R, A3W_UICOLOR_G, A3W_UICOLOR_B, 1}; // hover
+	colorBackground[] = {A3W_UICOLOR_R * 0.275, A3W_UICOLOR_G * 0.322, A3W_UICOLOR_B * 0.235, 1}; // normal
+	colorFocused[] = {A3W_UICOLOR_R * 0.275, A3W_UICOLOR_G * 0.322, A3W_UICOLOR_B * 0.235, 1}; // pulse
+	colorBackgroundActive[] = {A3W_UICOLOR_R * 0.275, A3W_UICOLOR_G * 0.235, A3W_UICOLOR_B, 1}; // hover
 	colorBackgroundDisabled[] = {0.3,0.3,0.3,1};
 	colorShadow[] = {0,0,0,1};
 	colorBorder[] = {0,0,0,1};
@@ -390,7 +390,7 @@ class w_RscCombo {
 	colorText[] = {0, 0, 0, 1};
 	colorBackground[] = {1, 1, 1, 1};
 	colorSelect[] = {1, 0, 0, 1};
-	colorSelectBackground[] = {A3W_UICOLOR_R, A3W_UICOLOR_G, A3W_UICOLOR_B, 0.5};
+	colorSelectBackground[] = {A3W_UICOLOR_R, A3W_UICOLOR_G, A3W_UICOLOR_B, 1};
 	soundSelect[] = {"", 0.000000, 1};
 	soundExpand[] = {"", 0.000000, 1};
 	soundCollapse[] = {"", 0.000000, 1};
