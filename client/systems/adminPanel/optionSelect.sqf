@@ -27,26 +27,45 @@ if (_uid call isAdmin) then
 
 			switch (lbCurSel _adminSelect) do
 			{
-				case 0: //Player Menu
+				case 0: //Unstuck player
+				{
+					closeDialog 0;
+					execVM "client\systems\adminPanel\unstuck.sqf";
+					if (!isNil "notifyAdminMenu") then { ["UnstuckPlayer", "Used"] call notifyAdminMenu };
+				};
+				case 1: //Teleport player to me
+				{
+					closeDialog 0;
+					execVM "client\systems\adminPanel\tptome.sqf";
+					if (!isNil "notifyAdminMenu") then { ["TeleportToMe", "Used"] call notifyAdminMenu };
+				};
+				case 2: //Teleport me to player
+				{
+					closeDialog 0;
+					execVM "client\systems\adminPanel\tpmeto.sqf";
+					if (!isNil "notifyAdminMenu") then { ["TeleportMeTo", "Used"] call notifyAdminMenu };
+				};
+				
+				case 3: //Player Menu
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\playerMenu.sqf";
 				};
-				case 1: //Full Vehicle Management
+				case 4: //Full Vehicle Management
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\vehicleManagement.sqf";
 				};
-				case 2: //Markers log
+				case 5: //Markers log
 				{
 					closeDialog 0;
 					createDialog "MarkerLog";
 				};
-				case 3: //Tags
+				case 6: //Tags
 				{
 					execVM "client\systems\adminPanel\playerTags.sqf";
 				};
-				case 4: //Teleport
+				case 7: //Teleport
 				{
 					closeDialog 0;
 					["A3W_teleport", "onMapSingleClick",
@@ -58,23 +77,23 @@ if (_uid call isAdmin) then
 					}] call BIS_fnc_addStackedEventHandler;
 					hint "Click on map to teleport";
 				};
-				case 5: //Money
+				case 8: //Money
 				{
 					_money = 5000;
 					player setVariable ["cmoney", (player getVariable ["cmoney",0]) + _money, true];
 					if (!isNil "notifyAdminMenu") then { ["money", _money] call notifyAdminMenu };
 				};
-				case 6: //Debug Menu
+				case 9: //Debug Menu
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\loadDebugMenu.sqf";
 				};
-				case 7: //Object search menu
+				case 10: //Object search menu
 				{
 					closeDialog 0;
 					execVM "client\systems\adminPanel\loadObjectSearch.sqf";
 				};
-				case 8: // toggle God mode
+				case 11: // toggle God mode
 				{
 					execVM "client\systems\adminPanel\toggleGodMode.sqf";
 				};
