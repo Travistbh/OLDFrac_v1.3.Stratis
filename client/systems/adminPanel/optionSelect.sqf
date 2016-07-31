@@ -94,12 +94,7 @@ if (_uid call isAdmin) then
 					closeDialog 0;
 					execVM "client\systems\adminPanel\loadDebugMenu.sqf";
 				};
-				case 11: //Object search menu
-				{
-					closeDialog 0;
-					execVM "client\systems\adminPanel\loadObjectSearch.sqf";
-				};
-				case 12: // toggle God mode
+				case 11: // toggle God mode
 				{
 					execVM "client\systems\adminPanel\toggleGodMode.sqf";
 				};

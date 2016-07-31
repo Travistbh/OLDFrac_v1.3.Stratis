@@ -25,11 +25,11 @@ if ([_uid, 3] call isAdmin) then {
 					"Group Leader Markers",
 					"Teleport",
 					"Unstuck Player",
-					"Teleport me to player",
 					"Teleport player to me",
+					"Teleport me to player",
+					"Object Search",
 	                "Money",
 	                "Debug Menu",
-					"Object Search",
 	                "Toggle God-mode"
 	];
 
