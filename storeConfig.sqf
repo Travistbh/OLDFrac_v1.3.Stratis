@@ -398,6 +398,7 @@ headArray = compileFinal str
 	["Combat Helmet (Black)", "H_HelmetB_black", 50, "hat"],
 	["Combat Helmet (Camonet)", "H_HelmetB_camo", 50, "hat"],
 	["Stealth Combat Helmet", "H_HelmetB_TI_tna_F", 75, "hat"],
+	["Viper SP Helmet (Green Hex)", "H_HelmetO_ViperSP_ghex_F", 45000, "hat"],
 	["Enhanced Combat Helmet", "H_HelmetSpecB", 75, "hat"],
 	["Enhanced Combat Helmet (Black)", "H_HelmetSpecB_blk", 75, "hat"],
 	["Enhanced Combat Helmet (Snakeskin)", "H_HelmetSpecB_snakeskin", 75, "hat"],
