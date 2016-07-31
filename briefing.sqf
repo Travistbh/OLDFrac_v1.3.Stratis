@@ -16,7 +16,8 @@ waitUntil {!isNull player};
 player createDiarySubject ["infos", "Infos and Help"];
 player createDiarySubject ["changelog", "Changelog"];
 player createDiarySubject ["credits", "Credits"];
-
+player createDiarySubject ["admins", "Admin List"];
+player createDiarySubject ["gearlevel", "Gear Level Info"];
 player createDiaryRecord ["changelog",
 [
 "v1.3b",
@@ -553,5 +554,341 @@ player createDiaryRecord ["infos",
 <br/>
 <br/>Q. I saw someone breaking a rule, what do I do?
 <br/>A. Simply go into global chat and get the attention of one of the admins or visit our forums, and make a report if the offense is serious.
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Levels",
+"
+<br/> When you have enough $ for A gear level, Go and apply here http://fractured-gaming.com/application-forms.php?appid=4
+<br/> When your application is recieved your gear level will be changed within 48 hours.
+<br/> Your Money will then be deducted from your account.
+<br/> To revieve a gear level, Fill out a gear level application on the forums to upgrade your gear level.
+<br/> There are 10 Levels in total.
+<br/> There are 5 Prestiege Levels. (after the 1st 10 levels)
+<br/> Prestiege Gear Levels allow you to spawn with either nothing or the bare minimum. 
+<br/> Prestiege Gear Levels are $10,000,000 per level and Prestiege level 5 is $25,000,000
+<br/> Prestiege Gear Levels are for the hardcore wasteland players with a big payoff at the end.
+<br/> The Final Prestiege level allows you to pick weapons from the VR before spawning. 
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Prestiege Level 5",
+"
+<br/><font size='16'>Prestiege Level 5</font>
+<br/><font size='15'>Cost: $25,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $1000
+<br/> Virtural Arsenal With almost every weapon in it.
+
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Prestiege Level 4",
+"
+<br/><font size='16'>Prestiege Level 3</font>
+<br/><font size='15'>Cost: $10,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $1000
+<br/> Bergen Backpack
+<br/> 45 ACP and 4 Magazines
+<br/> 2 Grenades
+
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Prestiege Level 3",
+"
+<br/><font size='16'>Prestiege Level 3</font>
+<br/><font size='15'>Cost: $10,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $1000
+<br/> Bergen Backpack
+<br/> 45 ACP and 2 Magazines
+<br/> 1 Grenade
+
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Prestiege Level 2",
+"
+<br/><font size='16'>Prestiege Level 2</font>
+<br/><font size='15'>Cost: $10,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $1000
+<br/> Bergen Backpack
+<br/> 45 ACP and 1 Magazine
+
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Prestiege Level 1",
+"
+<br/><font size='16'>Prestiege Level 1</font>
+<br/><font size='15'>Cost: $10,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $1000
+<br/> Bergen Backpack
+
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 10",
+"
+<br/><font size='16'>Gear Level 10</font>
+<br/><font size='15'>Cost: $10,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $1000
+<br/> An Olive Carryall
+<br/> A Plate Carrier GL Rig
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> 4 Grenades
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> An ECH Light Helmet
+<br/> A MK 14 with 5 Standard Mags a RCO and a suppressor instead of a Sting
+<br/> A 4-five .45 Pistol with an MRD Sight and suppressor instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 9",
+"
+<br/><font size='16'>Gear Level 9</font>
+<br/><font size='15'>Cost: $9,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $1000
+<br/> An Olive Carryall
+<br/> A Plate Carrier GL Rig
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> An ECH Helmet
+<br/> An MX Marksmen rifle with 4 Mags an RCO and a suppressor instead of a Sting
+<br/> A 4-five .45 Pistol with an MRD Sight and Suppressor instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 8",
+"
+<br/><font size='16'>Gear Level 8</font>
+<br/><font size='15'>Cost: $8,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $800
+<br/> An Olive Carryall
+<br/> An Olive Tactical Vest
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> An ECH Light Helmet
+<br/> An MX Carbine with 2 Mags and a Hologsight instead of a Sting
+<br/> A 4-five .45 Pistol with an MRD Sight instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 7",
+"
+<br/><font size='16'>Gear Level 7</font>
+<br/><font size='15'>Cost: $7,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $700
+<br/> An Olive Carryall
+<br/> An Olive Tactical Vest
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> An ECH Helmet
+<br/> A TRG-20 with 2 Mags and a Hologsight and Suppressor instead of a Sting
+<br/> A 4-five .45 Pistol with an MRD Sight instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 6",
+"
+<br/><font size='16'>Gear Level 6</font>
+<br/><font size='15'>Cost: $6,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $600
+<br/> An Olive Carryall
+<br/> An Olive Tactical Vest
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> An ECH Helmet
+<br/> A TRG-20 with 2 Mags and a Hologsight instead of a Sting
+<br/> A 4-five .45 Pistol instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 5",
+"
+<br/><font size='16'>Gear Level 5</font>
+<br/><font size='15'>Cost: $5,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $500
+<br/> An Olive Carryall
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> A TRG-20 with 2 Mags and a Hologsight instead of a Sting
+<br/> A 4-five .45 Pistol instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 4",
+"
+<br/><font size='16'>Gear Level 4</font>
+<br/><font size='15'>Cost: $4,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $400
+<br/> An Olive Carryall
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> A holosight and Suppressor on your Sting
+<br/> A 4-five .45 Pistol instead of the ACP .45
+<br/> An RPG-42 Alamut with 1 Rocket
+<br/> You also get extra mags for the Sting and 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 3",
+"
+<br/><font size='16'>Gear Level 3</font>
+<br/><font size='15'>Cost: 3,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $300
+<br/> An Olive Carryall
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> A holosight and Suppressor on your Sting
+<br/> A 4-five .45 Pistol instead of the ACP .45
+<br/> You also get extra mags for the Sting and 4-five .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 2",
+"
+<br/><font size='16'>Gear Level 2</font>
+<br/><font size='15'>Cost: $2,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $200
+<br/> An Olive Carryall
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> A pair of Red Goggles
+<br/> A holosight on your Sting
+<br/> You also get extra mags for both Sting and ACP .45
+"
+]];
+
+player createDiaryRecord ["gearlevel",
+[
+"Gear Level 1",
+"
+<br/><font size='16'>Gear Level 1</font>
+<br/><font size='15'>Cost: $1,000,000 ~:</font>
+<br/><font size='15'>List of Perks you get at this level ~:</font>
+<br/> Extra Starting Money: $100
+<br/> An Olive Carryall
+<br/> A GPS
+<br/> A pair of Binoculars
+<br/> An Extra Grenade
+<br/> A First Aid Kit
+<br/> You will also get extra mags for both your Sting and ACP .45
+"
+]];
+
+player createDiaryRecord ["admins",
+[
+"Admin List",
+"
+<br/><font color='#00FFEF' size='18'>Super Admins</font>
+<br/><font color='#00FFEF' size='12'>All Functions Activated (No Player Markers or Invisiblilty)</font>
+<br/> * Mokey
+<br/> * Archangel
+<br/> * TexasOutlaw
+<br/> * Korimer
+<br/> * Lenymo
+<br/> * Ghostyy
+<br/> * OutlawII
+<br/> * WOLFITZ
+<br/> * GeneralNukes
+
+<br/><font color='#0066FF' size='18'>High Admins</font>
+<br/><font color='#00FFEF' size='12'>Teleport, Spectate, Slay Delete Hacked objects</font>
+<br/> * LoricatusVulpes
+<br/> * GunFighterAlpha
+<br/> * Pitoucc
+<br/> * Greenmold
+<br/> * requiemanarchy
+<br/> * ExaMpLez
+<br/> * Archer
+
+<br/><font color='#002FFF' size='18'>Low Admins</font>
+<br/><font color='#00FFEF' size='12'>Spectate, Slay, Delete Hacked Objects</font>
+<br/> * Paladin
+<br/> * Harry
+<br/> * Llama
+<br/> * Isaac
+
 "
 ]];
