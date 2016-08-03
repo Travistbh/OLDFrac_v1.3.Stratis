@@ -9,7 +9,7 @@ _time = call compile preprocessFileLineNumbers ("persistence\server\world\" + ca
 
 if (["A3W_timeSaving"] call isConfigOn) then
 {
-	_dayTime = [_time, 0, dayTime, [0]] call BIS_fnc_param;
+	_dayTime = _time param [0, dayTime, [0]];
 	_date = date;
 	_date set [3, 0];
 	_date set [4, _dayTime * 60];
@@ -29,6 +29,9 @@ if (["A3W_weatherSaving"] call isConfigOn) then
 	if (!isNil "drn_DynamicWeather_WeatherThread") then { terminate drn_DynamicWeather_WeatherThread };
 	if (!isNil "drn_DynamicWeather_RainThread") then { terminate drn_DynamicWeather_RainThread };
 	if (!isNil "drn_DynamicWeather_FogThread") then { terminate drn_DynamicWeather_FogThread };
+
+	drn_JIPWeatherSynced = nil;
+	publicVariable "drn_JIPWeatherSynced";
 
 	drn_DynamicWeather_MainThread = (_time select [1,4]) execVM "addons\scripts\DynamicWeatherEffects.sqf";
 };

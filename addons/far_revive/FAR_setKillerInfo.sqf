@@ -4,7 +4,7 @@
 //	@file Name: FAR_setKillerInfo.sqf
 //	@file Author: AgentRev
 
-private ["_target", "_source", "_ammo", "_suspects", "_vehicle", "_killerVehicle", "_uavOwner", "_suspect", "_role"];
+private ["_target", "_source", "_ammo", "_suspects", "_vehicle", "_killerVehicle", "_suspect", "_role"];
 
 _target = _this select 0;
 _source = _this select 1;
@@ -20,20 +20,10 @@ if (_vehicle != _target && (isNull _source || _source in [_target, _vehicle])) t
 	if (!isNull _killerVehicle) then
 	{
 		_source = _killerVehicle;
-		_ammo = _vehicle getVariable ["FAR_killerAmmo", ""];
+		_ammo = _vehicle getVariable ["FAR_killerAmmo", objNull];
 	};
 
 	//diag_log format ["_vehicle = %1 / source = %2", typeOf _vehicle, typeOf _source];
-};
-
-if (!isNull _source && !isPlayer _source && {getText (configFile >> "CfgVehicles" >> typeOf _source >> "simulation") == "UAVPilot"}) then
-{
-	_uavOwner = (uavControl vehicle _source) select 0;
-
-	if (alive _uavOwner) then
-	{
-		_source = _uavOwner;
-	};
 };
 
 _target setVariable ["FAR_killerVehicle", _source];
@@ -41,11 +31,24 @@ _target setVariable ["FAR_killerVehicle", _source];
 if !(_source isKindOf "CAManBase") then
 {
 	{
-		_suspect = _x select 0;
-		_path = _x select 3;
+		_suspect = _x;
+		_role = assignedVehicleRole _suspect;
 
-		_suspects pushBack [_suspect, _source magazinesTurret _path, _path];
-	} forEach fullCrew [_source, "", false];
+		if (count _role > 0) then
+		{
+			_seat = _role select 0;
+
+			if (_seat == "Driver") exitWith
+			{
+				_suspects pushBack [_suspect, _source magazinesTurret [-1]];
+			};
+
+			if (_seat == "Turret") exitWith
+			{
+				_suspects pushBack [_suspect, _source magazinesTurret (_role select 1)];
+			};
+		};
+	} forEach crew _source;
 };
 
 _target setVariable ["FAR_killerAmmo", _ammo];
