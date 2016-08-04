@@ -203,7 +203,7 @@ drawPlayerIcons_thread = [] spawn
 							_ownWeapon = _ffv;
 						};
 					} forEach fullCrew [objectParent player, "", false];
-
+					
 					if (_thermalActive && {cameraOn == vehicle player && _weapon in weapons player && _ownWeapon &&
 						({_x == "TI"} count getArray (configFile >> "CfgWeapons" >> _weapon >> "visionMode") > 0 ||
 						 {!("{_x == 'TI'} count getArray (_x >> 'visionMode') > 0" configClasses (configFile >> "CfgWeapons" >> _weapon >> "OpticsModes") isEqualTo [])})}) then
