@@ -119,5 +119,5 @@ if (hasInterface || isServer) then
 ];
 
 0 = [] spawn {
-{while {alive _x} do {scopename "fatigued"; sleep 0.1; waituntil {sleep 0.1; getFatigue _x > 0.1 }; _x setFatigue 0.1}; breakTo "fatigued"} forEach playableUnits+switchableUnits;
+{while {alive _x} do {scopename "fatigued"; sleep 0.1; waituntil {sleep 0.1; getFatigue _x > 0.1 }; _x setFatigue 0.01}; breakTo "fatigued"} forEach playableUnits+switchableUnits;
 };
