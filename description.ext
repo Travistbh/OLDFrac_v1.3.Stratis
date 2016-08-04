@@ -69,7 +69,7 @@ briefing = 0; // if 0, skip Continue button
 #include "addons\outlw_magrepack\config.hpp"
 #include "addons\gui\gui.hpp"
 #include "addons\parking\list_simple_menu.hpp"
-#include "addons\CHVD\dialog.hpp"
+//#include "addons\CHVD\dialog.hpp"
 #include "addons\taw_vd\dialog.hpp"
 #include "addons\laptop\downloadData.hpp"
 #include "addons\TOParmaInfo\dialog\TOParmaInfo_dialog.hpp"
@@ -94,7 +94,7 @@ class CfgFunctions
 		#include "server\CfgFunctions.hpp"
 	};
 
-	#include "addons\CHVD\CfgFunctions.hpp"
+	//#include "addons\CHVD\CfgFunctions.hpp"
 };
 
 class CfgNotifications
