@@ -29,7 +29,7 @@ if (_uid call isAdmin) then
 					"Unlock Objects around you",
 					"Delete Unlocked Objects around you",
 					"Relock Objects around you"
-	]
+	];
 
 	{
 		_debugSelect lbAdd _x;
