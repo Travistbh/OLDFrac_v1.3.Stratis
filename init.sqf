@@ -104,6 +104,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\HvT\HvT.sqf"; // High Value Target
 	[] execVM "addons\HvT\HvD.sqf"; // High Value Drugs
 	[] execVM "addons\zlt_fastrope\zlt_fastrope.sqf";     // Fastrope
+	[] execVM "addons\disableThermal\disablethermal.sqf";
 	[] execVM "addons\laptop\init.sqf";
 	[] execVM "addons\Grenades\initGrenades.sqf"; // Toxic Gas Grenades
 	if (isServer) then {call compile preprocessFile "mapconfig\structures\initBuildings.sqf";}; //GID Structures

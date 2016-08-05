@@ -2,7 +2,7 @@
 if (isServer) exitwith {}; //SpeedWeasel's Fix for CPS issues http://forums.a3wasteland.com/index.php?topic=1989.msg13160#msg13160
 
 _layer = 85125; 
-//_launchers =["launch_I_Titan_short_F","launch_O_Titan_short_F","launch_B_Titan_short_F","launch_Titan_short_F","launch_Titan_F","launch_O_Titan_F","launch_I_Titan_F","launch_B_Titan_F"];  // launcher array
+_launchers =["launch_I_Titan_short_F","launch_O_Titan_short_F","launch_B_Titan_short_F","launch_Titan_short_F","launch_Titan_F","launch_O_Titan_F","launch_I_Titan_F","launch_B_Titan_F"];  // launcher array
 
 
 while {true} do 

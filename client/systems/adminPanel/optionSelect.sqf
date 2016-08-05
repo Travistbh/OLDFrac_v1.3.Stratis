@@ -140,7 +140,22 @@ if (_uid call isAdmin) then
 				{
 					hint format["Server FPS: %1",serverFPS];
 				};
-				case 7: //Test Function
+				case 7: //Unlock Base Objects within 15m
+				{
+					execVM "client\systems\adminPanel\unLock.sqf";
+					if (!isNil "notifyAdminMenu") then { ["UnlockObjects", "Opened"] call notifyAdminMenu };
+				};
+				case 8: //Delete Unlocked Base Objects within 15m
+				{
+					execVM "client\systems\adminPanel\deleteUnlocked.sqf";
+					if (!isNil "notifyAdminMenu") then { ["DeleteUnlockedObjects", "Opened"] call notifyAdminMenu };
+				};
+				case 9: //Relock objects within 30m
+				{
+					execVM "client\systems\adminPanel\reLock.sqf";
+					if (!isNil "notifyAdminMenu") then { ["RelockObjects", "Opened"] call notifyAdminMenu };
+				};
+				case 10: //Test Function
 				{
 					_group = createGroup civilian;
 					_leader = _group createunit ["C_man_polo_1_F", getPos player, [], 0.5, "Form"];
