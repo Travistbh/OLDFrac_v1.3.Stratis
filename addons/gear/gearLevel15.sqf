@@ -181,7 +181,7 @@ _crate = "Box_East_Ammo_F";
 "Medikit",
 "ToolKit",
 "MineDetector",
-"GPS",
+"ItemGPS",
 
 
 // Goggles
