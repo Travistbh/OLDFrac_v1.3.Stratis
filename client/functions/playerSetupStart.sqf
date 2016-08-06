@@ -31,3 +31,5 @@ removeVest _player;
 removeBackpack _player;
 removeGoggles _player;
 removeHeadgear _player;
+
+setTerrainGrid 1;
