@@ -100,6 +100,10 @@ switch (true) do
 		player SelectWeapon "MMG_02_sand_F";
 		player SelectWeapon "MMG_02_camo_F";
 		player SelectWeapon "MMG_02_black_F";
+		player SelectWeapon "srifle_GM6_ghex_LRPS_F";
+		player SelectWeapon "srifle_LRR_tna_LRPS_F";
+		player SelectWeapon "arifle_SPAR_03_snd_F";
+		player SelectWeapon "arifle_SPAR_03_khk_F";
 	};
 	case (_key == 3):
 	{
@@ -114,6 +118,8 @@ switch (true) do
 	case (_key == 4):
 	{
 		player SelectWeapon "launch_RPG32_F";
+		player SelectWeapon "launch_RPG32_ghex_F";
+		player SelectWeapon "launch_RPG7_F";
 		player SelectWeapon "launch_NLAW_F";
 		player SelectWeapon "launch_Titan_short_F";
 		player SelectWeapon "launch_O_Titan_short_F";
@@ -121,7 +127,15 @@ switch (true) do
 		player SelectWeapon "launch_Titan_F";
 		player SelectWeapon "launch_O_Titan_F";
 		player SelectWeapon "launch_I_Titan_F";
-		player SelectWeapon "launch_RPG7_F";
+		player SelectWeapon "launch_B_Titan_short_tna_F";
+		player SelectWeapon "launch_B_Titan_tna_F";
+		player SelectWeapon "launch_O_Titan_ghex_F";
+		player SelectWeapon "launch_O_Titan_short_ghex_F";
+	};
+	// Emergency Eject - Del Key
+	case (_key == 211):
+	{	
+		[-9, false, true, ""] execVM "client\actions\forceEject.sqf";
 	};
 	//MADE BY ISAAC HARDING DO NOT USE OR STEAL WITHOUT MY PERMSION
 	// U key
