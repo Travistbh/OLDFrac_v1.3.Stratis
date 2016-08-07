@@ -18,6 +18,26 @@ player createDiarySubject ["changelog", "Changelog"];
 player createDiarySubject ["credits", "Credits"];
 player createDiarySubject ["admins", "Admin List"];
 player createDiarySubject ["gearlevel", "Gear Level Info"];
+
+player createDiaryRecord ["changelog",
+[
+"FRACTURED Logs",
+"
+<br/>[FIXED] Gear going missing or spawning naked WILL not happen anymore!!!!!!!
+<br/>[Changed] Unstuck player function only throws players in the air for the ground height plus 20 meters so that they cannot abuse this as a relocate tactic.
+<br/>[Fixed] Gearlevel 0 or defult spawn is fixed
+<br/>[INFO] Laser designators will not have thermals until AgentRev FIXES his code on the matter, as of right now we CANNOT true thermals on because the code will not allow it.
+<br/>[FIXED] Double tap works
+<br/>[ADDED] Gearlevels on map again after 1.3 update
+<br/>[FIXED] UAV's will no longer being able to use thermals what so ever not even for a small ammount of time because it kills off instantly now.
+<br/>[FIXED] Sway or aiming is the SAME as it was on 1.2 version of the server.
+<br/>[FIXED] View distance is fixed now and the ground across the board is set to 1
+<br/>[FIXED] Stealth uniform can be bought as indie.
+
+"
+]];
+
+
 player createDiaryRecord ["changelog",
 [
 "v1.3b",
