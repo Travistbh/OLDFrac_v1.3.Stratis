@@ -1,4 +1,5 @@
-// by CRE4MPIE and Isaac Harding
+// Creator: CRE4MPIE
+// Editted by: Isaac Harding
 
 
 if (isServer) exitwith {}; //SpeedWeasel's Fix for CPS issues http://forums.a3wasteland.com/index.php?topic=1989.msg13160#msg13160
