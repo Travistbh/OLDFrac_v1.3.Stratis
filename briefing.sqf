@@ -890,25 +890,24 @@ player createDiaryRecord ["admins",
 <br/> * Lenymo
 <br/> * Ghostyy
 <br/> * OutlawII
-<br/> * WOLFITZ
+<br/> * RequiemAnarchy
 <br/> * GeneralNukes
 
 <br/><font color='#0066FF' size='18'>High Admins</font>
 <br/><font color='#00FFEF' size='12'>Teleport, Spectate, Slay Delete Hacked objects</font>
-<br/> * LoricatusVulpes
-<br/> * GunFighterAlpha
-<br/> * Pitoucc
 <br/> * Greenmold
-<br/> * requiemanarchy
 <br/> * ExaMpLez
-<br/> * Archer
+<br/> * Harry
+<br/> * Downey
+<br/> * StinkySneeze
+<br/> * Doc Whiskey
 
 <br/><font color='#002FFF' size='18'>Low Admins</font>
 <br/><font color='#00FFEF' size='12'>Spectate, Slay, Delete Hacked Objects</font>
-<br/> * Paladin
-<br/> * Harry
+<br/> * Magmalation
 <br/> * Llama
-<br/> * Isaac
+<br/> * Shine_Dwarf
+<br/> * Sugar
 
 "
 ]];
