@@ -37,7 +37,7 @@ _player addWeapon "hgun_ACPC2_F"; //Handgun
 
 _player addMagazines ["30Rnd_9x21_Mag", 3]; //Add primary weapon magazines first so one gets loaded
 _player addWeapon "SMG_02_F"; //Primary Weapon
-//_player addPrimaryWeaponItem ""; //Primary Weapon Attachments
+_player addPrimaryWeaponItem "optic_Holosight_smg"; //Primary Weapon Attachments
 //_player addPrimaryWeaponItem ""; //Primary Weapon Attachments
 //_player addPrimaryWeaponItem ""; //Primary Weapon Attachments
 

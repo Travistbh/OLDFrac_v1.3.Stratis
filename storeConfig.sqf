@@ -112,12 +112,12 @@ rifleArray = compileFinal str
 	["SPAR-17 Rifle (Sand)", "arifle_SPAR_03_snd_F", 1900],
 
 	// Sniper Rifles
-	["M320 LRR Sniper", "srifle_LRR_LRPS_F", 1500],
-	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_LRPS_F", 1550],
-	["M320 LRR Sniper (Tropic)", "srifle_LRR_tna_LRPS_F", 1575],
-	["GM6 Lynx Sniper", "srifle_GM6_LRPS_F", 1600],
-	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_LRPS_F", 1650],
-	["GM6 Lynx Sniper (G Hex)", "srifle_GM6_ghex_LRPS_F", 1675],
+	["M320 LRR Sniper", "srifle_LRR_LRPS_F", 1600],
+	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_LRPS_F", 1600],
+	["M320 LRR Sniper (Tropic)", "srifle_LRR_tna_LRPS_F", 1600],
+	["GM6 Lynx Sniper", "srifle_GM6_LRPS_F", 2000],
+	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_LRPS_F", 2000],
+	["GM6 Lynx Sniper (G Hex)", "srifle_GM6_ghex_LRPS_F", 2000],
 
 	["ASP-1 Kir Rifle", "srifle_DMR_04_F", 1500],
 	["ASP-1 Kir Rifle (Tan)", "srifle_DMR_04_tan_F", 1500]
@@ -146,20 +146,20 @@ lmgArray = compileFinal str
 
 launcherArray = compileFinal str
 [
-	["RPG-7", "launch_RPG7_F", 900],
-	["RPG-42 Alamut", "launch_RPG32_F", 900],
-	["RPG-42 Alamut (G Hex)", "launch_RPG32_ghex_F", 900, "noDLC"],
-	["PCML", "launch_NLAW_F", 1800],
-	["Titan MPRL Compact (Sand)", "launch_Titan_short_F", 7000],
-	["Titan MPRL Compact (Coyote)", "launch_O_Titan_short_F", 7000],
-	["Titan MPRL Compact (Olive)", "launch_I_Titan_short_F", 7000],
-	["Titan MPRL Compact (Tropic)", "launch_B_Titan_short_tna_F", 7000, "noDLC"],
-	["Titan MPRL Compact (G Hex)", "launch_O_Titan_short_ghex_F", 7000, "noDLC"],
-	["Titan MPRL AA (Sand)", "launch_Titan_F", 7000],
-	["Titan MPRL AA (Hex)", "launch_O_Titan_F", 7000],
-	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 7000],
-	["Titan MPRL AA (Tropic)", "launch_B_Titan_tna_F", 7000, "noDLC"],
-	["Titan MPRL AA (G Hex)", "launch_O_Titan_ghex_F", 7000, "noDLC"]
+	["RPG-7", "launch_RPG7_F", 1000],
+	["RPG-42 Alamut", "launch_RPG32_F", 1000],
+	["RPG-42 Alamut (G Hex)", "launch_RPG32_ghex_F", 1000, "noDLC"],
+	["PCML", "launch_NLAW_F", 1200],
+	["Titan MPRL Compact (Sand)", "launch_Titan_short_F", 3000],
+	["Titan MPRL Compact (Coyote)", "launch_O_Titan_short_F", 3000],
+	["Titan MPRL Compact (Olive)", "launch_I_Titan_short_F", 3000],
+	["Titan MPRL Compact (Tropic)", "launch_B_Titan_short_tna_F", 3000, "noDLC"],
+	["Titan MPRL Compact (G Hex)", "launch_O_Titan_short_ghex_F", 3000, "noDLC"],
+	["Titan MPRL AA (Sand)", "launch_Titan_F", 3000],
+	["Titan MPRL AA (Hex)", "launch_O_Titan_F", 3000],
+	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 3000],
+	["Titan MPRL AA (Tropic)", "launch_B_Titan_tna_F", 3000, "noDLC"],
+	["Titan MPRL AA (G Hex)", "launch_O_Titan_ghex_F", 3000, "noDLC"]
 ];
 
 allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call rifleArray + call lmgArray + call launcherArray);
@@ -270,21 +270,21 @@ ammoArray = compileFinal str
 	[".338 NM 130Rnd Belt", "130Rnd_338_Mag", 150],
 	["9.3mm 10Rnd Mag", "10Rnd_93x64_DMR_05_Mag", 50],
 	["9.3mm 150Rnd Belt", "150Rnd_93x64_Mag", 150],
-	[".408 7Rnd Cheetah Mag", "7Rnd_408_Mag", 50],
-	["12.7mm 5Rnd Mag", "5Rnd_127x108_Mag", 50],
-	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 60],
-	["12.7mm 10Rnd Subsonic Mag", "10Rnd_127x54_Mag", 75],
-	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 50],
-	["PG-7VM HEAT Grenade", "RPG7_F", 200],                   // Direct damage: medium    | Splash damage: low    | Guidance: none
-	["RPG-42 Anti-Tank Rocket", "RPG32_F", 250],              // Direct damage: high      | Splash damage: low    | Guidance: none
-	["RPG-42 High-Explosive Rocket", "RPG32_HE_F", 250],      // Direct damage: medium    | Splash damage: medium | Guidance: none
-	["PCML Anti-Tank Missile", "NLAW_F", 400],                // Direct damage: very high | Splash damage: low    | Guidance: laser, ground vehicles
-	["Titan Anti-Tank Missile", "Titan_AT", 1000],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
-	["Titan Anti-Personnel Missile", "Titan_AP", 1000],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
-	["Titan Anti-Air Missile", "Titan_AA", 1000],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
+	[".408 7Rnd Cheetah Mag", "7Rnd_408_Mag", 500],
+	["12.7mm 5Rnd Mag", "5Rnd_127x108_Mag", 500],
+	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 750],
+	["12.7mm 10Rnd Subsonic Mag", "10Rnd_127x54_Mag", 200],
+	[".50 BW 10Rnd Mag", "10Rnd_50BW_Mag_F", 1000],
+	["PG-7VM HEAT Grenade", "RPG7_F", 1000],                   // Direct damage: medium    | Splash damage: low    | Guidance: none
+	["RPG-42 Anti-Tank Rocket", "RPG32_F", 1000],              // Direct damage: high      | Splash damage: low    | Guidance: none
+	["RPG-42 High-Explosive Rocket", "RPG32_HE_F", 1000],      // Direct damage: medium    | Splash damage: medium | Guidance: none
+	["PCML Anti-Tank Missile", "NLAW_F", 1800],                // Direct damage: very high | Splash damage: low    | Guidance: laser, ground vehicles
+	["Titan Anti-Tank Missile", "Titan_AT", 5000],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
+	["Titan Anti-Personnel Missile", "Titan_AP", 5000],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
+	["Titan Anti-Air Missile", "Titan_AA", 5000],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
 	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 125],
 	["40mm 3Rnd HE Grenades", "3Rnd_HE_Grenade_shell", 250],
-	["40mm Toxic Gas", "1Rnd_SmokeYellow_Grenade_shell", 500],
+	["40mm Toxic Gas", "1Rnd_SmokeYellow_Grenade_shell", 1000],
 	["40mm 3Rnd Toxic Gas)", "3Rnd_SmokeYellow_Grenade_shell", 1500],
 	["40mm Smoke Round (White)", "1Rnd_Smoke_Grenade_shell", 50],
 	["40mm Smoke Round (Purple)", "1Rnd_SmokePurple_Grenade_shell", 50],
@@ -391,9 +391,9 @@ accessoriesArray = compileFinal str
 // If commented, means the color/camo isn't implemented or is a duplicate of another hat
 headArray = compileFinal str
 [
-	["Gas Mask (NATO)", "H_CrewHelmetHeli_B", 1000, "hat"],
-	["Gas Mask (CSAT)", "H_CrewHelmetHeli_O", 1000, "hat"],
-	["Gas Mask (AAF)", "H_CrewHelmetHeli_I", 1000, "hat"],
+	["Gas Mask (NATO)", "H_CrewHelmetHeli_B", 1500, "hat"],
+	["Gas Mask (CSAT)", "H_CrewHelmetHeli_O", 1500, "hat"],
+	["Gas Mask (AAF)", "H_CrewHelmetHeli_I", 1500, "hat"],
 	["Modular Helmet (Digi)", "H_HelmetIA", 50, "hat"],
 	// ["MICH (Camo)", "H_HelmetIA_net", 50, "hat"],
 	// ["MICH 2 (Camo)", "H_HelmetIA_camo", 50, "hat"],
