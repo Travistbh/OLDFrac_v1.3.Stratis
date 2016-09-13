@@ -167,30 +167,30 @@ allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call 
 staticGunsArray = compileFinal str
 [
 	// ["Vehicle Ammo Crate", "Box_NATO_AmmoVeh_F", 2500],
-	["Static Titan AT 4Rnd", "B_static_AT_F", 2500], // Static launchers only have 4 ammo, hence the low price
-	["Static Titan AT 4Rnd", "O_static_AT_F", 2500],
-	["Static Titan AT 4Rnd", "I_static_AT_F", 2500],
-	["Static Titan AA 4Rnd", "B_static_AA_F", 3000],
-	["Static Titan AA 4Rnd", "O_static_AA_F", 3000],
-	["Static Titan AA 4Rnd", "I_static_AA_F", 3000],
-	["Mk30 HMG .50 Low tripod", "B_HMG_01_F", 2000],
-	["Mk30 HMG .50 Low tripod", "O_HMG_01_F", 2000],
-	["Mk30 HMG .50 Low tripod", "I_HMG_01_F", 2000],
+	["Static Titan AT 4Rnd", "B_static_AT_F", 30000], // Static launchers only have 4 ammo, hence the low price
+	["Static Titan AT 4Rnd", "O_static_AT_F", 30000],
+	["Static Titan AT 4Rnd", "I_static_AT_F", 30000],
+	["Static Titan AA 4Rnd", "B_static_AA_F", 30000],
+	["Static Titan AA 4Rnd", "O_static_AA_F", 30000],
+	["Static Titan AA 4Rnd", "I_static_AA_F", 30000],
+	["Mk30 HMG .50 Low tripod", "B_HMG_01_F", 20000],
+	["Mk30 HMG .50 Low tripod", "O_HMG_01_F", 20000],
+	["Mk30 HMG .50 Low tripod", "I_HMG_01_F", 20000],
 	// ["Mk30A HMG .50 Sentry", "B_HMG_01_A_F", 5000], // "A" = Autonomous = Overpowered
 	// ["Mk30A HMG .50 Sentry", "O_HMG_01_A_F", 5000],
 	// ["Mk30A HMG .50 Sentry", "I_HMG_01_A_F", 5000],
-	["Mk30 HMG .50 High tripod", "B_HMG_01_high_F", 3000],
-	["Mk30 HMG .50 High tripod", "O_HMG_01_high_F", 3000],
-	["Mk30 HMG .50 High tripod", "I_HMG_01_high_F", 3000],
-	["Mk32 GMG 20mm Low tripod", "B_GMG_01_F", 5000],
-	["Mk32 GMG 20mm Low tripod", "O_GMG_01_F", 5000],
-	["Mk32 GMG 20mm Low tripod", "I_GMG_01_F", 5000],
+	["Mk30 HMG .50 High tripod", "B_HMG_01_high_F", 20000],
+	["Mk30 HMG .50 High tripod", "O_HMG_01_high_F", 20000],
+	["Mk30 HMG .50 High tripod", "I_HMG_01_high_F", 20000],
+	["Mk32 GMG 20mm Low tripod", "B_GMG_01_F", 25000],
+	["Mk32 GMG 20mm Low tripod", "O_GMG_01_F", 25000],
+	["Mk32 GMG 20mm Low tripod", "I_GMG_01_F", 25000],
 	// ["Mk32A GMG 20mm Sentry", "B_GMG_01_A_F", 10000],
 	// ["Mk32A GMG 20mm Sentry", "O_GMG_01_A_F", 10000],
 	// ["Mk32A GMG 20mm Sentry", "I_GMG_01_A_F", 10000],
-	["Mk32 GMG 20mm High tripod", "B_GMG_01_high_F", 6000],
-	["Mk32 GMG 20mm High tripod", "O_GMG_01_high_F", 6000],
-	["Mk32 GMG 20mm High tripod", "I_GMG_01_high_F", 6000]
+	["Mk32 GMG 20mm High tripod", "B_GMG_01_high_F", 26000],
+	["Mk32 GMG 20mm High tripod", "O_GMG_01_high_F", 26000],
+	["Mk32 GMG 20mm High tripod", "I_GMG_01_high_F", 26000]
 	// ["Mk6 Mortar", "B_Mortar_01_F", 12500],
 	// ["Mk6 Mortar", "O_Mortar_01_F", 12500],
 	// ["Mk6 Mortar", "I_Mortar_01_F", 12500]
