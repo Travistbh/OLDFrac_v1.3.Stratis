@@ -9,7 +9,7 @@ _player = _this;
 _player setVariable ["cmoney", (_player getVariable "cmoney") + 1000, true];
 
 _crate = "Box_East_Ammo_F";		
-["Preload",_crate] call BIS_fnc_arsenal;
+["Open",_crate] call BIS_fnc_arsenal;
 [_crate,[true],true] call BIS_fnc_addVirtualMagazineCargo;
 [_crate,[true],true] call BIS_fnc_addVirtualBackpackCargo;
 
@@ -456,8 +456,6 @@ _crate = "Box_East_Ammo_F";
 "H_BandMask_demon",
 "H_BandMask_khk",
 "H_BandMask_reaper"
-//"H_HelmetO_ViperSP_ghex_F",
-//"H_HelmetO_ViperSP_hex_F"
 	  
 ],true] call BIS_fnc_addVirtualItemCargo;
 
