@@ -67,21 +67,21 @@ switch (_gearLevel) do
 		hint "Congrats! Your Level 8 gear loaded";
    };
    
-      case 9:
+    case 9:
    {
 		player execVM "addons\gear\gearLevel9.sqf"; 
 		sleep 5;
 		hint "Congrats! Final Gear Level Loaded!";
    };
 
-      case 10:
+    case 10:
    {
 		player execVM "addons\gear\gearLevel10.sqf"; 
 		sleep 5;
 		hint "Congrats! Final Gear Level Loaded!";
    };
  
-       case 11:
+    case 11:
    {
 		player execVM "addons\gear\gearLevel11.sqf"; 
 		sleep 5;
@@ -95,14 +95,14 @@ switch (_gearLevel) do
 		hint "Congrats! Prestiege Gear Level 2 Loaded!";
    };
    
-      case 13:
+    case 13:
    {
 		player execVM "addons\gear\gearLevel13.sqf"; 
 		sleep 5;
 		hint "Congrats! Prestiege Gear Level 3 Loaded!";
    };
 
-      case 14:
+    case 14:
    {
 		player execVM "addons\gear\gearLevel14.sqf"; 
 		sleep 5;
@@ -114,6 +114,13 @@ switch (_gearLevel) do
 		player execVM "addons\gear\gearLevel15.sqf"; 
 		sleep 5;
 		hint "Congrats! Virtual Arsenal Loaded!";
+   };
+   
+    case 16:
+   {
+		player execVM "addons\gear\gearLevel20.sqf"; 
+		sleep 5;
+		hint "Fractured Member Event Gear Level Loaded!";
    };
    
     default
