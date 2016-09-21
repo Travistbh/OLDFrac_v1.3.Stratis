@@ -118,7 +118,7 @@ switch (_gearLevel) do
    
     case 16:
    {
-		player execVM "addons\gear\gearLevel20.sqf"; 
+		player execVM "addons\gear\gearLevel16.sqf"; 
 		sleep 5;
 		hint "Fractured Member Event Gear Level Loaded!";
    };
