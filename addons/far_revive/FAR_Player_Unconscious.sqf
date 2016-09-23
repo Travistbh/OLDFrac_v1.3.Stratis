@@ -89,10 +89,10 @@ waitUntil {!isNil {_unit getVariable "FAR_killerSuspects"}};
 _unit allowDamage true;
 _unit setDamage 0.5;
 
-if (!isPlayer _unit) then
-{
-	{ _unit disableAI _x } forEach ["FSM","TARGET","AUTOTARGET"];
-};
+//if (!isPlayer _unit) then
+//{
+//	{ _unit disableAI _x } forEach ["FSM","TARGET","AUTOTARGET"];
+//};
 
 // Find killer
 _killer = _unit call FAR_findKiller;
