@@ -16,7 +16,7 @@ removeHeadgear _player;
 
 _player addBackpack "B_Carryall_oli"; //BackPack
 _player addVest "V_PlateCarrierGL_rgr";
-_player linkItem "NVGogglesB_grn_F";
+_player linkItem "NVGoggles";
 _player linkItem "ItemGPS";
 _player addWeapon "Binocular";
 _player addMagazines ["HandGrenade", 2];

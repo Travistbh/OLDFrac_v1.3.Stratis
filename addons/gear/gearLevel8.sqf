@@ -19,7 +19,7 @@ removeHeadgear _player;
 _player addBackpack "B_Carryall_oli"; //BackPack
 //_player addUniform ""; //Uniform (must be supported by side)
 _player addVest "V_TacVest_oli"; //Vest
-_player linkItem "NVGogglesB_blk_F"; //Nightvision, "NVGoggles"
+_player linkItem "NVGoggles"; //Nightvision, "NVGoggles"
 _player linkItem "ItemGPS"; //GPS, "ItemGPS"
 _player addWeapon "Binocular"; //Binoculars
 _player addMagazines ["HandGrenade", 2]; //Grenades
