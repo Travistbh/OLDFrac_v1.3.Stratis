@@ -1,4 +1,4 @@
-# A3Wasteland Altis
+﻿# A3Wasteland Altis
 
 A3Wasteland is a survival-like combat sandbox, which incorporates elements of team deathmatch and sector control in one big fun-to-play package. Similar to DayZ, the objectives are to scavenge weapons and vehicles, team up with fellow players, and engage in combat to obtain control of the landscape. Best experienced with 50 or more players. 
 
@@ -25,3 +25,10 @@ A list of other contributors can be found in the "Credits" section from the in-g
 ---
 
 This project is licensed under the [GNU Affero GPL v3](http://tldrlegal.com/l/agpl3). Copyright © 2013 - 2015 [A3Wasteland.com](http://a3wasteland.com/)
+
+
+THIS IS A TEST.
+
+this is also a test
+
+This is another test by mokey
