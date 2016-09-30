@@ -16,7 +16,8 @@ removeGoggles _player;
 removeHeadgear _player;
 
 _player addBackpack "B_Carryall_ghex_F"; //BackPack
-_player addUniform "U_B_T_Soldier_F"; //Uniform (must be supported by side)
+_player addUniform "U_B_T_Soldier_AR_F";
+//_player addUniform "U_B_T_Soldier_F"; //Uniform (must be supported by side)
 _player addVest "V_PlateCarrier1_tna_F"; //Vest
 _player linkItem "NVGoggles"; //Nightvision, "NVGoggles"
 _player linkItem "ItemGPS"; //GPS, "ItemGPS"
