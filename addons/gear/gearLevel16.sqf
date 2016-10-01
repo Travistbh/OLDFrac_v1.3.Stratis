@@ -36,7 +36,7 @@ _player addWeapon "hgun_ACPC2_F"; //Handgun
 //_player addhandGunItem ""; //Handgun Attachments
 //_player addhandGunItem ""; //Handgun Attachments
 
-_player addMagazines ["30Rnd_65x39_caseless_mag", 3]; //Add primary weapon magazines first so one gets loaded
+_player addMagazines ["30Rnd_65x39_caseless_green", 3]; //Add primary weapon magazines first so one gets loaded
 _player addWeapon "arifle_Katiba_F"; //Primary Weapon
 //_player addPrimaryWeaponItem ""; //Primary Weapon Attachments
 //_player addPrimaryWeaponItem ""; //Primary Weapon Attachments
