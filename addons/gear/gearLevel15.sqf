@@ -27,6 +27,7 @@ _crate = "Box_East_Ammo_F";
 
 // Rifles
 "srifle_DMR_04_F",
+"srifle_DMR_04_Tan_F",
 "arifle_AK12_F",
 "arifle_AK12_GL_F",
 "arifle_AKM_F",
@@ -160,6 +161,7 @@ _crate = "Box_East_Ammo_F";
 "V_PlateCarrierIA1_dgtl",
 "V_PlateCarrierIA2_dgtl",
 "V_PlateCarrierIAGL_oli",
+"V_PlateCarrierH_CTRG",
 "V_HarnessO_gry",
 "V_HarnessOGL_gry",
 "V_HarnessOSpec_gry",
