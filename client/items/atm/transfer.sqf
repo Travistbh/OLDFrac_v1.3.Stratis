@@ -17,7 +17,7 @@
 #define MSG_CONFIRM_LINE3 "Total cost: $%1"
 
 disableSerialization;
-private ["_dialog", "_input", "_accDropdown", "_selAcc", "_selAccName", "_amount", "_fee", "_feeAmount", "_total", "_balance", "_mBalance", "_destBalance", "_confirmMsg", "_transferKey", "_deposit", "_withdraw", "_controls"];
+private ["_dialog", "_input", "_accDropdown", "_selAcc", "_selAccName", "_amount", "_fee", "_feeAmount", "_total", "_balance", "_maxBalance", "_destBalance", "_confirmMsg", "_transferKey", "_deposit", "_withdraw", "_controls"];
 
 _dialog = findDisplay AtmGUI_IDD;
 
@@ -50,18 +50,18 @@ if (_balance < _total) exitWith
 	playSound "FD_CP_Not_Clear_F";
 };
 
-_mBalance = ["A3W_atmMaxBalance", 1000000] call getPublicVar;
+_maxBalance = ["A3W_atmMaxBalance", 1000000] call getPublicVar;
 _destBalance = _selAcc getVariable ["bmoney", 0];
 
-if (_destBalance >= _mBalance) exitWith
+if (_destBalance >= _maxBalance) exitWith
 {
 	[ERR_MAX_BALANCE_REACHED, 5] call mf_notify_client;
 	playSound "FD_CP_Not_Clear_F";
 };
 
-if (_destBalance + _total > _mBalance) exitWith
+if (_destBalance + _total > _maxBalance) exitWith
 {
-	[format [ERR_MAX_BALANCE_LIMIT, [_mBalance - _destBalance] call fn_numbersText], 5] call mf_notify_client;
+	[format [ERR_MAX_BALANCE_LIMIT, [_maxBalance - _destBalance] call fn_numbersText], 5] call mf_notify_client;
 	playSound "FD_CP_Not_Clear_F";
 };
 
