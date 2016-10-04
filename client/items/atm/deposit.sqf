@@ -32,7 +32,7 @@ _balance = player getVariable ["bmoney", 0];
 _mBalance = ["A3W_atmMaxBalance", 1000000] call getPublicVar;
 
 _gearLevel = player getVariable ["gear", 0];
-_maxBalance = switch (_gearLevel) do
+_maxBalance = switch (_donatorLevel) do
    {
     case 1: {_maxBalance + 1000000;};
 	case 2: {_maxBalance + 2000000;};
