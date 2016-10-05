@@ -23,6 +23,7 @@ player createDiaryRecord ["changelog",
 [
 "FRACTURED Logs",
 "
+<br/>[Changed] Changed vehicle prices
 <br/>[ADDED] Mine Detectors to Engineer Kits, Gear Levels ONLY!
 <br/>[FIXED] Gear going missing or spawning naked WILL not happen anymore!!!!!!!
 <br/>[Changed] Unstuck player function only throws players in the air for the ground height plus 20 meters so that they cannot abuse this as a relocate tactic.

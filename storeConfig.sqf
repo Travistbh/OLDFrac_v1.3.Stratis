@@ -913,15 +913,15 @@ armoredArray = compileFinal str
 tanksArray = compileFinal str
 [
 	["CRV-6e Bobcat (Resupply)", "B_APC_Tracked_01_CRV_F", 30000, "vehicle"],
-	["IFV-6c Panther", "B_APC_Tracked_01_rcws_F", 35000, "vehicle"],
-	["FV-720 Mora", "I_APC_tracked_03_cannon_F", 45000, "vehicle"],
-	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 55000, "vehicle"],
-	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 75000, "vehicle"],
-	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 100000, "vehicle"],
-	["M2A1 Slammer", "B_MBT_01_cannon_F", 75000, "vehicle"],
-	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 90000, "vehicle"], // Commander gun variant
-	["T-100 Varsuk", "O_MBT_02_cannon_F", 100000, "vehicle"],
-	["MBT-52 Kuma", "I_MBT_03_cannon_F", 100000, "vehicle"]
+	["IFV-6c Panther", "B_APC_Tracked_01_rcws_F", 45000, "vehicle"],
+	["FV-720 Mora", "I_APC_tracked_03_cannon_F", 60000, "vehicle"],
+	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 75000, "vehicle"],
+	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 100000, "vehicle"],
+	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 125000, "vehicle"],
+	["M2A1 Slammer", "B_MBT_01_cannon_F", 100000, "vehicle"],
+	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 125000, "vehicle"], // Commander gun variant
+	["T-100 Varsuk", "O_MBT_02_cannon_F", 150000, "vehicle"],
+	["MBT-52 Kuma", "I_MBT_03_cannon_F", 150000, "vehicle"]
 ];
 
 
@@ -946,11 +946,11 @@ helicoptersArray = compileFinal str
 	["CH-67 Huron (Armed)", "B_Heli_Transport_03_F", 15000, "vehicle"], // CH-47 with 2 side miniguns
 
 	["UH-80 Ghost Hawk", "B_Heli_Transport_01_F", 15000, "vehicle"], // UH-60 Stealth with 2 side miniguns
-	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 40000, "vehicle"], // Armed AH-6
-	["PO-30 Orca (Armed, Black)", "O_Heli_Light_02_v2_F", 50000, "vehicle"], // Armed Ka-60 with orca paintjob
-	["PO-30 Orca (Armed, Hex)", "O_Heli_Light_02_F", 70000, "vehicle"], // Armed Ka-60
-	["WY-55 Hellcat (Armed)", "I_Heli_light_03_F", 70000, "vehicle"], // Armed AW159
-	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 75000, "vehicle"]
+	["AH-9 Pawnee", "B_Heli_Light_01_armed_F", 60000, "vehicle"], // Armed AH-6
+	["PO-30 Orca (Armed, Black)", "O_Heli_Light_02_v2_F", 70000, "vehicle"], // Armed Ka-60 with orca paintjob
+	["PO-30 Orca (Armed, Hex)", "O_Heli_Light_02_F", 80000, "vehicle"], // Armed Ka-60
+	["WY-55 Hellcat (Armed)", "I_Heli_light_03_F", 90000, "vehicle"], // Armed AW159
+	["MQ-12 Falcon UAV", "B_T_UAV_03_F", 100000, "vehicle"]
 ];
 
 planesArray = compileFinal str
@@ -959,7 +959,6 @@ planesArray = compileFinal str
 	["V-44 X Blackfish (Infantry)", "B_T_VTOL_01_infantry_F", 40000, "vehicle"],
 	//["V-44 X Blackfish (Gunship)", "B_T_VTOL_01_armed_F", 600000, "vehicle"],
 	//["Y-32 Xi'an", "O_T_VTOL_02_infantry_F", 250000, "vehicle", "HIDDEN"],
-
 	["MQ4A Greyhawk Missile UAV", "B_UAV_02_F", 50000, "vehicle"],
 	["MQ4A Greyhawk Bomber UAV", "B_UAV_02_CAS_F", 35000, "vehicle"],
 	["K40 Ababil-3 Missile UAV", "O_UAV_02_F", 50000, "vehicle"],
