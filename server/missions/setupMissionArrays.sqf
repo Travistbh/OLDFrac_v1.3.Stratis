@@ -36,7 +36,8 @@ SideMissions =
 	["mission_Roadblock", 1],
 	["mission_Smugglers", 1],
 	["mission_HostileJet", 1],
-	["mission_drugsRunners", 1]
+	["mission_drugsRunners", 1],
+	["mission_geoCache", 1]
 ];
 
 MoneyMissions =
