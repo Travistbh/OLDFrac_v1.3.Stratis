@@ -18,7 +18,10 @@ MainMissions =
 	["mission_LightArmVeh", 1],
 	["mission_ArmedHeli", 1],
 	["mission_CivHeli", 1],
-	["mission_Hackers", 0.25]
+	["mission_Hackers", 0.25],
+	["mission_AbandonedJet", 1],
+	["mission_HostileJetFormation", 1],
+	["mission_VehicleCapture", 0.5]
 ];
 
 SideMissions =
