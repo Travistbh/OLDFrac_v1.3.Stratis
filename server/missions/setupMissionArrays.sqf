@@ -31,7 +31,12 @@ SideMissions =
 	["mission_SunkenSupplies", 1],
 	["mission_TownInvasion", 2],
 	["mission_Outpost", 3],
-	["mission_Truck", 1]
+	["mission_Truck", 1],
+	["mission_Sniper", 1],
+	["mission_Roadblock", 1],
+	["mission_Smugglers", 1],
+	["mission_HostileJet", 1],
+	["mission_drugsRunners", 1]
 ];
 
 MoneyMissions =
