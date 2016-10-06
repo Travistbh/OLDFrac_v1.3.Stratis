@@ -10,6 +10,74 @@ disableSerialization;
 
 private ["_dialog", "_balance", "_amountInput", "_accDropdown", "_feeText", "_totalText", "_bmoney", "_balanceText", "_amount", "_fee", "_feeAmount", "_selAcc"];
 
+_gearsEnabled = ["A3W_gearsEnabled"] call isConfigOn;
+_gearLevel = player getVariable ["gear", 0];
+
+if (_gearLevel <= 0) then
+{
+	_maxBalance = ["A3W_atmMaxBalance", 1000000] call getPublicVar;
+};
+if (_gearLevel == 1) then
+{
+	_maxBalance = 2000000;
+};
+if (_gearLevel == 2 then
+{
+	_maxBalance = 3000000;
+};
+if (_gearLevel == 3 then
+{
+	_maxBalance = 4000000;
+};
+if (_gearLevel == 4 then
+{
+	_maxBalance = 5000000;
+};
+if (_gearLevel == 5 then
+{
+	_maxBalance = 6000000;
+};
+if (_gearLevel == 6 then
+{
+	_maxBalance = 7000000;
+};
+if (_gearLevel == 7 then
+{
+	_maxBalance = 8000000;
+};
+if (_gearLevel == 8 then
+{
+	_maxBalance = 9000000;
+};
+if (_gearLevel == 9 then
+{
+	_maxBalance = 10000000;
+};
+if (_gearLevel == 10 then
+{
+	_maxBalance = 10000000;
+};
+if (_gearLevel == 11 then
+{
+	_maxBalance = 10000000;
+};
+if (_gearLevel == 12 then
+{
+	_maxBalance = 10000000;
+};
+if (_gearLevel == 13 then
+{
+	_maxBalance = 10000000;
+};
+if (_gearLevel == 14 then
+{
+	_maxBalance = 10000000;
+};
+if (_gearLevel >= 15 then
+{
+	_maxBalance = 25000000;
+};
+
 _dialog = findDisplay AtmGUI_IDD;
 
 if (isNull _dialog) exitWith {};
@@ -22,7 +90,7 @@ _totalText = _dialog displayCtrl AtmTotalText_IDC;
 
 _bmoney = player getVariable ["bmoney", 0];
 _balanceText = format ["$%1", [player getVariable ["bmoney", 0]] call fn_numbersText];
-if (_bmoney >= ["A3W_atmMaxBalance", 1000000] call getPublicVar) then { _balanceText = format ["<t color='#FFA080'>%1</t>", _balanceText] };
+if (_bmoney >= _maxBalance) then { _balanceText = format ["<t color='#FFA080'>%1</t>", _balanceText] };
 
 _balance ctrlSetStructuredText parseText _balanceText;
 
