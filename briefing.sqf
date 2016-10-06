@@ -23,6 +23,10 @@ player createDiaryRecord ["changelog",
 [
 "FRACTURED Logs",
 "
+<br/>[Changed] Max Bank Account : + 1mil per gear level
+<br/>[Changed] NPCs now drop cash
+<br/>[Changed] Status bar
+<br/>[Removed] Some missions due to insta-popping
 <br/>[Changed] Changed vehicle prices
 <br/>[ADDED] Mine Detectors to Engineer Kits, Gear Levels ONLY!
 <br/>[FIXED] Gear going missing or spawning naked WILL not happen anymore!!!!!!!
