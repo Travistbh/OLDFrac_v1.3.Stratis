@@ -19,7 +19,7 @@ MainMissions =
 	["mission_ArmedHeli", 1],
 	["mission_CivHeli", 1],
 	["mission_Hackers", 0.25],
-	["mission_AbandonedJet", 1],
+	//["mission_AbandonedJet", 1],
 	["mission_HostileJetFormation", 1],
 	["mission_VehicleCapture", 0.5]
 ];
@@ -35,7 +35,7 @@ SideMissions =
 	["mission_Sniper", 1],
 	["mission_Roadblock", 1],
 	["mission_Smugglers", 1],
-	["mission_HostileJet", 1],
+	// ["mission_HostileJet", 1],
 	// ["mission_drugsRunners", 1], Misson will not work without drugs
 	["mission_geoCache", 1]
 ];
