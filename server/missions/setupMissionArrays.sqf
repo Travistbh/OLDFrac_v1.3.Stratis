@@ -34,7 +34,7 @@ SideMissions =
 	["mission_Truck", 1],
 	["mission_Sniper", 1],
 	["mission_Roadblock", 1],
-	["mission_Smugglers", 1],
+	//["mission_Smugglers", 1],
 	// ["mission_HostileJet", 1],
 	// ["mission_drugsRunners", 1], Misson will not work without drugs
 	["mission_geoCache", 1]
