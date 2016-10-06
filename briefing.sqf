@@ -23,7 +23,6 @@ player createDiaryRecord ["changelog",
 [
 "FRACTURED Logs",
 "
-<br/>[Changed] Max Bank Account : + 1mil per gear level
 <br/>[Changed] NPCs now drop cash
 <br/>[Changed] Status bar
 <br/>[Removed] Some missions due to insta-popping
