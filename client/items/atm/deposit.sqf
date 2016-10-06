@@ -7,9 +7,6 @@
 
 #include "gui_defines.hpp"
 
-_gearsEnabled = ["A3W_gearsEnabled"] call isConfigOn;
-_gearLevel = player getVariable ["gear", 0];
-
 #define ERR_NOT_ENOUGH_FUNDS "You don't have enough money."
 #define ERR_MAX_BALANCE "Your account has reached the maximum balance."
 
@@ -32,73 +29,7 @@ if (player getVariable ["cmoney", 0] < _amount) exitWith
 };
 
 _balance = player getVariable ["bmoney", 0];
-
-if (_gearLevel <= 0) then
-{
-	_maxBalance = ["A3W_atmMaxBalance", 1000000] call getPublicVar;
-};
-if (_gearLevel == 1) then
-{
-	_maxBalance = 2000000;
-};
-if (_gearLevel == 2 then
-{
-	_maxBalance = 3000000;
-};
-if (_gearLevel == 3 then
-{
-	_maxBalance = 4000000;
-};
-if (_gearLevel == 4 then
-{
-	_maxBalance = 5000000;
-};
-if (_gearLevel == 5 then
-{
-	_maxBalance = 6000000;
-};
-if (_gearLevel == 6 then
-{
-	_maxBalance = 7000000;
-};
-if (_gearLevel == 7 then
-{
-	_maxBalance = 8000000;
-};
-if (_gearLevel == 8 then
-{
-	_maxBalance = 9000000;
-};
-if (_gearLevel == 9 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel == 10 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel == 11 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel == 12 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel == 13 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel == 14 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel >= 15 then
-{
-	_maxBalance = 25000000;
-};
-
-
+_maxBalance = ["A3W_atmMaxBalance", 1000000] call getPublicVar;
 
 if (_balance + _amount > _maxBalance) then
 {

@@ -250,18 +250,6 @@ pp_park_allowed = {
   def(_parked_vehicles);
   _parked_vehicles = _player getVariable ["parked_vehicles", []];
   init(_count,count(_parked_vehicles));
-  
-	_gearsEnabled = ["A3W_gearsEnabled"] call isConfigOn;
-    _gearLevel = _player getVariable ["gear", 0];
-
-  if (_gearLevel <= 1) then
-  {
-    pp_max_player_vehicles = 5;
-  };
-  if (_gearLevel >= 2) then
-  {
-    pp_max_player_vehicles = 7;
-  };
 
   //check if the parking is full
   if (isSCALAR(pp_max_player_vehicles) && {pp_max_player_vehicles > 0 && {_count >= pp_max_player_vehicles}}) exitWith {

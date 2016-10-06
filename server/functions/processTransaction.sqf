@@ -6,75 +6,6 @@
 
 _type = param [0, "", [""]];
 
-_gearsEnabled = ["A3W_gearsEnabled"] call isConfigOn;
-_gearLevel = player getVariable ["gear", 0];
- 
- if (_gearLevel <= 0) then
-{
-	_maxBalance = ["A3W_atmMaxBalance", 1000000] call getPublicVar;
-};
-if (_gearLevel == 1) then
-{
-	_maxBalance = 2000000;
-};
-if (_gearLevel == 2 then
-{
-	_maxBalance = 3000000;
-};
-if (_gearLevel == 3 then
-{
-	_maxBalance = 4000000;
-};
-if (_gearLevel == 4 then
-{
-	_maxBalance = 5000000;
-};
-if (_gearLevel == 5 then
-{
-	_maxBalance = 6000000;
-};
-if (_gearLevel == 6 then
-{
-	_maxBalance = 7000000;
-};
-if (_gearLevel == 7 then
-{
-	_maxBalance = 8000000;
-};
-if (_gearLevel == 8 then
-{
-	_maxBalance = 9000000;
-};
-if (_gearLevel == 9 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel == 10 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel == 11 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel == 12 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel == 13 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel == 14 then
-{
-	_maxBalance = 10000000;
-};
-if (_gearLevel >= 15 then
-{
-	_maxBalance = 25000000;
-};
-
-
 switch (toLower _type) do
 {
 	case "warchest":
@@ -181,8 +112,8 @@ switch (toLower _type) do
 			if (_amount < 0 && _balance < abs _amount) exitWith {}; // player has not enough funds for withdrawal
 
 			_newBalance = _balance + _amount;
-			
-			//if (_newBalance > _maxBalance) exitWith {}; // account would exceed or has reached max balance
+
+			if (_newBalance > ["A3W_atmMaxBalance", 1000000] call getPublicVar) exitWith {}; // account would exceed or has reached max balance
 
 			_player setVariable ["bmoney", _newBalance, true];
 
